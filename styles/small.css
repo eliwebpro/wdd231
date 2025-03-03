@@ -43,7 +43,7 @@ header span {
     font-weight: 600;
 }
 
-/* Navigation */
+/* menu */
 nav {
     background: #333;
     padding: 10px;
@@ -99,7 +99,7 @@ main section img {
     margin: 0 auto;
 }
 
-/* Sections */
+/* sections */
 section {
     margin-bottom: 10px;
 }
@@ -121,7 +121,7 @@ h2 {
 
 }
 
-/* Footer */
+/* footer */
 footer {
     text-align: center;
     padding: 10px;
@@ -130,7 +130,7 @@ footer {
     border-radius: 8px;
 }
 
-/* Course List */
+/* course list */
 #courseList div {
     padding: 10px;
     margin: 5px;
@@ -149,7 +149,7 @@ footer {
     color: #fff;
 }
 
-/* Buttons */
+/* buttons */
 button {
     padding: 10px;
     background: #013a63;
@@ -166,7 +166,7 @@ button:hover {
     background: #005fa3;
 }
 
-/* Responsive Navigation */
+/* responsive menu */
 @media (min-width: 768px) {
     nav ul {
         display: flex !important;

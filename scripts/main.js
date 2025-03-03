@@ -2,7 +2,7 @@ document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent += document.lastModified;
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Hamburger Menu Toggle
+    // hamburger menu
     const menuButton = document.getElementById("menuBtn");
     const navMenu = document.getElementById("navMenu");
 
@@ -10,14 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
         navMenu.classList.toggle("show");
     });
 
-    // Navigation Active Link Highlight
-    document.querySelectorAll("nav ul li a").forEach(link => {
-        if (link.href === window.location.href) {
-            link.classList.add("active");
-        }
-    });
 
-    // Course List Filtering
+
+    // course list filtering
     const courses = [
         { code: "CSE 110", name: "Intro to Programming", completed: true },
         { code: "WDD 130", name: "Web Fundamentals", completed: true },
@@ -47,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Add Click for Filters
+    // add click for filters
     document.getElementById("showAll").addEventListener("click", () => displayCourses("all"));
     document.getElementById("showCSE").addEventListener("click", () => displayCourses("CSE"));
     document.getElementById("showWDD").addEventListener("click", () => displayCourses("WDD"));

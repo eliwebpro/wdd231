@@ -9,14 +9,14 @@ body {
 
 
 
-    /* Center Content */
+    /* body */
     body {
         max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
     }
 
-    /* Header */
+    /* header */
     header {
         display: flex;
         align-items: center;
@@ -26,37 +26,40 @@ body {
         background: #013a63;
     }
 
+    /* header img */
     header img {
         width: 70px;
         margin: 5px;
         border-radius: 50px;
     }
 
+    /* header txt */
     header span {
         font-size: 3rem;
         font-weight: 600;
     }
 
 
-    /* navigation */
+    /* menu */
     nav {
         background-color: #36454f;
         border-radius: 8px;
         padding: 10px;
     }
 
+    /* hide mobile menu button */
     nav button {
         display: none;
-        /* hide mobile menu button */
     }
 
+    /* menu list */
     nav ul {
         display: flex;
         justify-content: space-around;
         list-style: none;
     }
 
-
+    /* menu list txt */
     nav ul li a {
         font-size: 20px;
         color: white;
@@ -65,6 +68,7 @@ body {
         transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
     }
 
+    /* menu animation */
     nav ul li a:hover {
         text-decoration: underline;
         transform: scale(1.5);
@@ -83,6 +87,7 @@ body {
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
     }
 
+    /* main img arch utah */
     main section img {
         display: block;
     }
@@ -141,7 +146,7 @@ body {
 
 
 
-    /* Course List */
+    /* course list */
     #courseList {
         display: flex;
         flex-wrap: wrap;
@@ -173,7 +178,7 @@ body {
         color: #ffffff;
     }
 
-    /* Buttons */
+    /* buttons */
     button {
         flex: 1 1 25%;
         min-width: 180px;
@@ -195,7 +200,7 @@ body {
 
 
 
-    /* Footer */
+    /* footer */
     footer {
         text-align: center;
         padding: 15px;
