@@ -40,6 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
             courseDiv.textContent = `${course.code}`;
             courseList.appendChild(courseDiv);
         });
+        const totalCredits = filteredCourses.length * 3; // Assuming each course is 3 credits
+        document.getElementById("creditsTotal").textContent = `Total Credits: ${totalCredits}`;
     }
 
     // add click for filters
