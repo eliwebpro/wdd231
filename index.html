@@ -4,11 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Course homepage for WDD 231 - Web Frontend Development - week01">
+    <meta name="author" content="Eliezio Marques da Silva">
+
+    <title>WDD 231 - Course Home</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/main.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+
 </head>
-<p>Week01</p>
+
 
 <body>
+
+    <header>
+        <img src="images/eliezio.jpg" alt="Profile photo">
+        <span>Eliezio M da Silva</span>
+    </header>
+
+    <nav>
+        <button id="menuBtn">&#9776;</button>
+        <ul id="navMenu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/eliezio-silva/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section>
+            <h2>Course Work </h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, veniam nam! Excepturi saepe
+                provident corrupti, accusamus dicta aliquid itaque nihil facere molestiae aperiam sint! Repellendus
+                asperiores aut necessitatibus ipsam consequuntur?</p>
+        </section>
+
+        <section>
+            <h2>Utah, USA </h2>
+            <img src="images/arch_utah.jpg" alt="Arch Utah">
+        </section>
+
+        <section id="courses">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div>
+                <button id="showAll">All Courses</button>
+                <button id="showWDD">WDD Courses</button>
+                <button id="showCSE">CSE Courses</button>
+            </div>
+            <div id="courseList"></div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Eliezio - Utah, USA</p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
 
 </body>
 
