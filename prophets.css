@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background: #f4f4f4;
@@ -7,12 +8,15 @@ body {
     text-align: center;
 }
 
+/* Header */
 header {
     background: #013a63;
     color: white;
     padding: 20px;
+    font-size: 1.5rem;
 }
 
+/* Cards Container */
 #cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -22,6 +26,7 @@ header {
     margin: auto;
 }
 
+/* Individual Cards */
 section {
     background: white;
     padding: 15px;
@@ -30,26 +35,70 @@ section {
     text-align: center;
 }
 
+/* Prophet Name */
 h2 {
     font-size: 1.5rem;
     color: #013a63;
 }
 
+/* Birth Details */
 p {
     font-size: 1rem;
     margin: 5px 0;
     color: #555;
 }
 
+/* Prophet Image */
 img {
     width: 100%;
     border-radius: 8px;
     margin-top: 10px;
 }
 
+/* Footer */
 footer {
     background: #013a63;
     color: white;
     padding: 15px;
     margin-top: 20px;
+}
+
+/* Filter Buttons */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+button {
+    background: #013a63;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    min-width: 150px;
+}
+
+button:hover {
+    background: #005fa3;
+    transform: scale(1.05);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    button {
+        width: 80%;
+    }
 }
