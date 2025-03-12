@@ -28,7 +28,10 @@ function displayBusinesses(view) {
         const img = document.createElement("img");
         img.src = `../chamber/images/${business.image}`;
         img.alt = `${business.name} logo`;
+        img.width = 150;  
+        img.height = 100; 
         img.loading = "lazy";
+
 
         if (view === "grid") {
             const img = document.createElement("img");
