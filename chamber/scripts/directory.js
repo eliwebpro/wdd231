@@ -18,6 +18,11 @@ async function getBusinesses() {
 }
 
 function displayBusinesses(view) {
+    // Force grid view on small screens
+    if (window.innerWidth <= 763) {
+        view = "grid"; // Override user selection
+    }
+
     businessContainer.innerHTML = "";
     businessContainer.className = view;
 
@@ -28,10 +33,7 @@ function displayBusinesses(view) {
         const img = document.createElement("img");
         img.src = `../chamber/images/${business.image}`;
         img.alt = `${business.name} logo`;
-        img.width = 150;  
-        img.height = 100; 
         img.loading = "lazy";
-
 
         if (view === "grid") {
             const img = document.createElement("img");
@@ -66,11 +68,19 @@ function displayBusinesses(view) {
     document.getElementById("listView").classList.toggle("active", view === "list");
 }
 
+// Toggle button event listeners
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("gridView").addEventListener("click", () => displayBusinesses("grid"));
     document.getElementById("listView").addEventListener("click", () => displayBusinesses("list"));
 
     getBusinesses();
+});
+
+// Force grid view when resizing to small screens
+window.addEventListener("resize", () => {
+    if (window.innerWidth <= 763) {
+        displayBusinesses("grid");
+    }
 });
 
 const menuBtn = document.getElementById("menuBtn");

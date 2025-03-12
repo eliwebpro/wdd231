@@ -1,21 +1,18 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
 }
-
 .business-card img {
-    width: 150px;
-    height: 100px;
-    object-fit: contain;
+    width: 100px; 
+    height: auto;
 }
-
-
-/* Larger screens (764px and up) */
+/* Tela maior que 764px */
 @media (min-width: 764px) {
+
     body {
         max-width: 1200px;
         margin: 0 auto;
     }
-
     /* Header */
     header {
         display: flex;
@@ -39,17 +36,15 @@ body {
         color: white;
     }
 
-    /* Navigation */
+    /* Menu */
     nav {
         background-color: #36454f;
         border-radius: 8px;
         padding: 10px;
     }
-
-    nav button {
+      nav button {
         display: none;
     }
-
     nav ul {
         display: flex;
         justify-content: space-around;
@@ -75,10 +70,29 @@ body {
         font-weight: bold;
         border-radius: 5px;
         padding: 8px 12px;
-        text-decoration: underline;
+        text-decoration: none;
     }
-
-    /* Main Content */
+    h1{
+        text-align: center;
+        font-size: 3rem;
+        padding: 10px;
+        background: #013a63;
+        color: white;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        padding: 10px;
+        background: #013a63;
+        color: white;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    /* Main */
     main {
         display: flex;
         flex-direction: column;
@@ -88,37 +102,12 @@ body {
         border-radius: 10px;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
     }
-
-    /* Directory Header */
-    .directory-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 20px;
-        background-color: #f8f8f8;
-        padding: 20px;
-        border-radius: 10px;
-    }
-
-    /* Business Container */
-    #businessContainer {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 15px;
-        padding: 20px;
-        width: 100%;
-        max-width: 1200px;
-        min-height: 500px;
-    }
-
-    /* Toggle Buttons */
+    /* Botões de alternância */
     .toggle-buttons {
         display: flex;
-        gap: 15px;
+        gap: 10px;
         justify-content: center;
         margin: 20px 0;
-        flex-wrap: wrap;
     }
 
     .toggle-buttons button {
@@ -141,43 +130,35 @@ body {
         transform: scale(1.15);
     }
 
-    /* Business Cards */
-    .business-card {
-        background: white;
-        padding: 15px;
+    
+    /* list grif */
+    #businessContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        width: 100%;
+        max-width: 1200px;
+        background-color: #f8f8f8;
+        padding: 20px;
         border-radius: 10px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        transition: transform 0.2s ease-in-out;
     }
-
-    .business-card:hover {
-        transform: scale(1.1);
-    }
-
-    .business-card img {
-        width: 150px;
-        height: 100px;
-        object-fit: contain;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-
-    /* List View */
-    #businessContainer.list {
+     /* List View */
+     #businessContainer.list {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        min-height: 500px;
+        gap: 20px;
+        width: 100%;
+        max-width: 1200px;
+        background-color: #f8f8f8;
+        padding: 20px;
+        border-radius: 10px;
     }
-
     .business-card.list {
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: 10px;
-        gap: 20px;
-        background: white;
+        gap: 15px;
     }
 
     /* Footer */
@@ -187,31 +168,16 @@ body {
         background: #013a63;
         color: white;
         border-radius: 8px;
-        min-height: 80px;
     }
 }
 
-/* Heading Styles */
-h1,
-h2 {
-    text-align: center;
-    font-size: 3rem;
-    padding: 10px;
-    background: #013a63;
-    color: white;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    width: 100%;
-}
 
-/* Mobile Styles */
+/* small sizes */
 @media (max-width: 763px) {
     body {
         background-color: #f8f8f8;
-        max-width: 1200px;
         margin: 0 auto;
     }
-
     #listView {
         display: none;
     }
@@ -235,14 +201,21 @@ h2 {
         border-radius: 15px;
     }
 
+    header span {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
     /* Navigation */
+    /* Estilização para o menu */
     nav {
         background: #333;
         border-radius: 8px;
         position: relative;
+        padding: 10px;
     }
 
-    /* Hamburger Menu */
+    /* Estilização do botão */
     #menuBtn {
         background: none;
         border: none;
@@ -253,17 +226,20 @@ h2 {
         position: relative;
     }
 
+    /* Ícone de hambúrguer e 'X' */
     #menuBtn::before {
         content: "☰";
         font-size: 24px;
-        transition: all 0.3s ease-in-out;
     }
 
     #menuBtn.open::before {
         content: "✖";
         font-size: 24px;
+        background-color: #005fa3;
+
     }
 
+    /* Menu fechado */
     nav ul {
         display: none;
         list-style: none;
@@ -277,29 +253,125 @@ h2 {
         width: 100%;
     }
 
+    /* Quando o menu estiver aberto, exiba-o em bloco e empurre o restante para baixo */
     nav ul.show {
         display: block;
-        position: absolute;
+        position: static;
         width: 100%;
         padding: 10px 0;
+    }
+      /* Estilização dos itens do menu */
+    nav ul li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        padding: 5px;
+    }
+
+    /* Estilização do link ativo */
+    nav ul li a.active {
+        background-color: #005fa3;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 8px 12px;
+        text-decoration: none;
+    }
+    /* Main Content */
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+        text-align: center;
+        padding: 10px;
+        background: #013a63;
+        color: white;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 2rem;
+
+    }
+    h2 {
+        text-align: center;
+        padding: 10px;
+        background: #013a63;
+        color: white;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    /* Toggle Buttons */
+    .toggle-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .toggle-buttons button {
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+
+    .toggle-buttons button.active {
+        background-color: #a2d4f6;
+        color: black;
+        font-weight: bold;
+    }
     }
 
     /* Business Container */
     #businessContainer {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 15px;
-        min-height: 500px;
+        padding: 20px;
     }
-
-    /* Business Card */
-    .business-card {
-        background: #f0f0f0;
-        padding: 15px;
-        border-radius: 8px;
+    .business-card img {
+        width: 100%;
+        max-height: 150px;
+        object-fit: contain;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+     /* Estilizando os cartões como blocos */
+     .business-card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         text-align: center;
-        transition: transform 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    /* Ajustar imagens na grid */
+    .business-card img {
+        width: 100%;
+        max-height: 150px;
+        object-fit: contain;
+        border-radius: 5px;
+        margin-bottom: 10px;
     }
 
     /* Footer */
@@ -309,6 +381,7 @@ h2 {
         background: #013a63;
         color: white;
         border-radius: 8px;
-        min-height: 80px;
     }
-}
+
+    
+
