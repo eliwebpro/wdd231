@@ -2,6 +2,10 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f8f8;
 }
+.business-card img {
+    width: 100px; /* Or a fixed size */
+    height: auto;
+}
 
 /* Tela maior que 764px */
 @media (min-width: 764px) {
