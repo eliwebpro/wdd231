@@ -3,21 +3,14 @@ body {
     background-color: #f8f8f8;
 }
 
-
-
-/* larger screens (760px and up) */
+/* Tela maior que 764px */
 @media (min-width: 764px) {
 
-
-
-    /* body */
     body {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 20px;
     }
-
-    /* header */
+    /* Header */
     header {
         display: flex;
         align-items: center;
@@ -28,53 +21,46 @@ body {
         border-radius: 8px;
     }
 
-    /* header img */
     header img {
         width: 70px;
         margin: 5px;
         border-radius: 15px;
     }
 
-    /* header txt */
     header h1 {
         font-size: 1.5rem;
         font-weight: 600;
         color: white;
     }
 
-
-    /* menu */
+    /* Menu */
     nav {
         background-color: #36454f;
         border-radius: 8px;
         padding: 10px;
     }
 
-    /* hide mobile menu button */
     nav button {
         display: none;
     }
 
-    /* menu list */
     nav ul {
         display: flex;
         justify-content: space-around;
         list-style: none;
     }
 
-    /* menu list txt */
     nav ul li a {
         font-size: 20px;
         color: white;
         text-decoration: none;
         display: inline-block;
-        transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
     }
 
-    /* menu animation */
     nav ul li a:hover {
         text-decoration: underline;
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
 
     nav ul li a.active {
@@ -86,80 +72,30 @@ body {
         text-decoration: underline;
     }
 
-
-    /* main */
+    /* Main */
     main {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 30px;
         background: white;
         border-radius: 10px;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
     }
 
-    /* main img arch utah */
-    main section img {
-        display: block;
-    }
-
-
-    /* sections */
-    section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        padding: 20px;
-        background: #f8f8f8;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 5px 8px 5px 8px rgba(0, 0, 0, 0.1);
-    }
-
-
-    h2 {
-        text-align: center;
-        font-size: 4rem;
-        padding: 10px;
-        color: #013a63;
-        border-radius: 8px;
-        margin-bottom: 10px;
-        width: 100%;
-
-    }
-
-
-    h3 {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    /* Main container as a grid */
-    main {
-        display: flex;
-        flex-direction: column;
-        /* Stack elements */
-        align-items: center;
-        /* Center content */
-    }
-
-    /* Grid container for h2 and buttons */
+    /* Cabeçalho do Diretório */
     .directory-header {
         display: flex;
         flex-direction: column;
-        /* Stack items on top of each other */
         align-items: center;
         text-align: center;
         margin-bottom: 20px;
-        background-color: #f8f8f8f8;
+        background-color: #f8f8f8;
         padding: 20px;
         border-radius: 10px;
     }
 
-    /* Business container full width */
+    /* Container dos Cartões */
     #businessContainer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -169,44 +105,24 @@ body {
         background-color: #f8f8f8;
         padding: 20px;
         border-radius: 10px;
-
     }
 
-
-
-
-
-    /* footer */
-    footer {
-        text-align: center;
-        padding: 15px;
-        background: #013a63;
-        color: white;
-        border-radius: 8px;
-    }
-
-
-
+    /* Botões de alternância */
     .toggle-buttons {
-        margin: 20px;
-
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin: 20px 0;
     }
 
     .toggle-buttons button {
         padding: 10px;
-        margin: 5px;
         background: #013a63;
         color: white;
         border: none;
         cursor: pointer;
         border-radius: 5px;
-
-    }
-
-    button:hover {
-        transform: scale(1.15);
-        transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
-
+        transition: transform 0.2s ease-in-out;
     }
 
     .toggle-buttons button.active {
@@ -215,25 +131,28 @@ body {
         font-weight: bold;
     }
 
-    /* Business Cards Grid View */
-    #businessContainer.grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        padding: 20px;
-        max-width: 1200px;
-        margin: auto;
+    .toggle-buttons button:hover {
+        transform: scale(1.15);
     }
 
+    /* Cartões de Negócios */
     .business-card {
         background: white;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .business-card:hover {
+        transform: scale(1.1);
     }
 
     .business-card img {
         width: 100%;
+        max-height: 150px;
+        object-fit: contain;
         border-radius: 5px;
         margin-bottom: 10px;
     }
@@ -242,6 +161,7 @@ body {
     #businessContainer.list {
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
 
     .business-card.list {
@@ -256,20 +176,218 @@ body {
         width: 100px;
     }
 
-    #businessContainer.grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 15px;
+        background: #013a63;
+        color: white;
+        border-radius: 8px;
+    }
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@media (max-width: 763px) {
+    body {
+        background-color: #f8f8f8;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #listView {
+        display: none;
     }
 
-    #businessContainer.list {
+    /* Header */
+    header {
+        display: flex;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+        background: #013a63;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    header img {
+        width: 50px;
+        margin: 5px;
+        border-radius: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    /* Navigation */
+    /* Estilização para o menu */
+    nav {
+        background: #333;
+        border-radius: 8px;
+        position: relative;
+        /* Mantém o menu relativo ao botão */
+    }
+
+    /* Estilização do botão */
+    #menuBtn {
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        display: block;
+        position: relative;
+    }
+
+    /* Ícone de hambúrguer e 'X' */
+    #menuBtn::before {
+        content: "☰";
+        font-size: 24px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #menuBtn.open::before {
+        content: "✖";
+        font-size: 24px;
+    }
+
+    /* Menu fechado */
+    nav ul {
+        display: none;
+        /* Oculta o menu por padrão */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background: #444;
+        border-radius: 8px;
+        position: absolute;
+        top: 100%;
+        /* Posiciona o menu logo abaixo do botão */
+        left: 0;
+        width: 100%;
+    }
+
+    /* Quando o menu estiver aberto, exiba-o em bloco e empurre o restante para baixo */
+    nav ul.show {
+        display: block;
+        position: static;
+        /* Permite que o menu empurre o conteúdo para baixo */
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    /* Estilização dos itens do menu */
+    nav ul li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        padding: 10px;
+    }
+
+    nav ul li a:hover {
+        background-color: #005fa3;
+        border-radius: 5px;
+    }
+
+    /* Estilização do link ativo */
+    nav ul li a.active {
+        background-color: #005fa3;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 8px 12px;
+        text-decoration: underline;
+    }
+
+    /* Active Link */
+    nav ul li a.active {
+        background-color: #005fa3;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 8px 12px;
+        text-decoration: underline;
+    }
+
+    /* Main Content */
+    main {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
     }
 
+    h2 {
+        text-align: center;
+        padding: 10px;
+        background: #013a63;
+        color: white;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    /* Toggle Buttons */
+    .toggle-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .toggle-buttons button {
+        background-color: #013a63;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+    }
+
+    .toggle-buttons button:hover {
+        background-color: #005fa3;
+    }
+
+    .toggle-buttons button.active {
+        background-color: #013a63;
+        font-weight: bold;
+    }
+
+    /* Business Container */
+    #businessContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Business Card */
     .business-card {
-        background: white;
+        background: #f0f0f0;
+        /* Change background color */
         padding: 15px;
         border-radius: 8px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -278,7 +396,7 @@ body {
     }
 
     .business-card:hover {
-        transform: scale(1.12);
+        transform: scale(1.02);
     }
 
     .business-card img {
@@ -287,6 +405,160 @@ body {
         object-fit: contain;
         border-radius: 5px;
         margin-bottom: 10px;
+    }
+
+    /* List View */
+    #businessContainer.list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .business-card.list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 10px;
+        background: #013a63;
+        color: white;
+        border-radius: 8px;
+    }
+
+    /* Hamburger Button */
+    nav button {
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        display: block;
+        position: relative;
+    }
+
+    /* Default hamburger icon */
+    nav button::before {
+        content: "☰";
+        font-size: 24px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Change to "X" when menu is open */
+    nav button.open::before {
+        content: "✖";
+        font-size: 24px;
+    }
+
+    /* Hide menu by default on small screens */
+    nav ul {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Show menu when clicked */
+    nav ul.show {
+        display: block;
+    }
+
+    /* Style menu items */
+    nav ul li {
+        padding: 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* Estilizando os cartões como blocos */
+    .business-card {
+        background: #ffffff;
+        /* Define um fundo branco para os cartões */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        /* Sombra para destacar */
+        text-align: center;
+        transition: transform 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Hover nos cartões */
+    .business-card:hover {
+        transform: scale(1.05);
+        /* Pequeno efeito ao passar o mouse */
+    }
+
+    /* Quando estiver no modo LISTA */
+    .business-card.list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        /* Espaço entre a imagem e o texto */
+        text-align: left;
+        padding: 15px;
+    }
+
+    /* Ajustar imagens na grid */
+    .business-card img {
+        width: 100%;
+        max-height: 150px;
+        object-fit: contain;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    /* Ajustar imagens na lista */
+    .business-card.list img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        margin-right: 15px;
+    }
+
+    /* Ajuste do container de negócios */
+    #businessContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 15px;
+        padding: 20px;
+    }
+
+    /* Modo Lista */
+    #businessContainer.list {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* Show full menu on larger screens */
+    @media (min-width: 768px) {
+        nav ul {
+            display: flex !important;
+            justify-content: space-around;
+        }
+
+        nav button {
+            display: none;
+        }
     }
 
 }
