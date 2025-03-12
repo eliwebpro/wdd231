@@ -5,20 +5,18 @@ const url = "../data/members.json";
 const businessContainer = document.getElementById("businessContainer");
 let businesses = [];
 
-// ✅ Função para buscar os dados dos membros e exibir os cartões
 async function getBusinesses() {
     try {
         const response = await fetch(url);
         if (!response.ok) throw new Error("Failed to fetch data");
         const data = await response.json();
         businesses = data.members;
-        displayBusinesses("grid"); // Default para exibição em grade
+        displayBusinesses("grid"); 
     } catch (error) {
         console.error("Error loading business data:", error);
     }
 }
 
-// ✅ Exibir os membros em Grid ou Lista
 function displayBusinesses(view) {
     businessContainer.innerHTML = "";
     businessContainer.className = view;
@@ -61,12 +59,10 @@ function displayBusinesses(view) {
                 businessContainer.appendChild(card);
             });
 
-    // ✅ Atualiza o botão ativo
     document.getElementById("gridView").classList.toggle("active", view === "grid");
     document.getElementById("listView").classList.toggle("active", view === "list");
 }
 
-// ✅ Event Listeners
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("gridView").addEventListener("click", () => displayBusinesses("grid"));
     document.getElementById("listView").addEventListener("click", () => displayBusinesses("list"));
@@ -74,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
     getBusinesses();
 });
 
-// ✅ Função do Menu Hamburguer
 const menuBtn = document.getElementById("menuBtn");
 const navMenu = document.getElementById("navMenu");
 
