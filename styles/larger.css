@@ -74,14 +74,7 @@ body {
         transform: scale(1.5);
     }
 
-    nav ul li a.active {
-        background-color: #005fa3;
-        color: white; 
-        font-weight: bold;
-        border-radius: 5px;
-        padding: 8px 12px;
-        text-decoration: underline; 
-    }
+
 
     /* main */
     main {
