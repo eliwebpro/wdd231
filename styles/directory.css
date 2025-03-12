@@ -1,0 +1,288 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* larger screens (760px and up) */
+@media (min-width: 764px) {
+
+
+
+    /* body */
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* header */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        text-align: center;
+        background: #013a63;
+        border-radius: 8px;
+    }
+
+    /* header img */
+    header img {
+        width: 70px;
+        margin: 5px;
+        border-radius: 15px;
+    }
+
+    /* header txt */
+    header span {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: white;
+    }
+
+
+    /* menu */
+    nav {
+        background-color: #36454f;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    /* hide mobile menu button */
+    nav button {
+        display: none;
+    }
+
+    /* menu list */
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    /* menu list txt */
+    nav ul li a {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    /* menu animation */
+    nav ul li a:hover {
+        text-decoration: underline;
+        transform: scale(1.5);
+    }
+
+    nav ul li a.active {
+        background-color: #005fa3;
+        color: white; 
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 8px 12px;
+        text-decoration: underline; 
+    }
+
+   
+    /* main */
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        padding: 30px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /* main img arch utah */
+    main section img {
+        display: block;
+    }
+
+
+    /* sections */
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 20px;
+        background: #f8f8f8;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 8px 5px 8px rgba(0, 0, 0, 0.1);
+    }
+
+   
+    h2 {
+        text-align: center;
+        font-size: 4rem;
+        padding: 10px;
+        color: #013a63;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        width: 100%;
+
+    }
+    
+    
+    h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* Main container as a grid */
+    main {
+        display: flex;
+        flex-direction: column; /* Stack elements */
+        align-items: center; /* Center content */
+    }
+
+    /* Grid container for h2 and buttons */
+    .directory-header {
+        display: flex;
+        flex-direction: column; /* Stack items on top of each other */
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: #f8f8f8f8;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    /* Business container full width */
+    #businessContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        width: 100%;
+        max-width: 1200px;
+        background-color: #f8f8f8;
+        padding: 20px;
+        border-radius: 10px;
+        
+    }
+
+    
+
+
+
+    /* footer */
+    footer {
+        text-align: center;
+        padding: 15px;
+        background: #013a63;
+        color: white;
+        border-radius: 8px;
+    }
+
+
+
+    .toggle-buttons {
+        margin: 20px;
+
+    }
+
+    .toggle-buttons button {
+        padding: 10px;
+        margin: 5px;
+        background: #013a63;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+         
+    }
+
+    button:hover {
+        transform: scale(1.15);
+        transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    }
+
+    .toggle-buttons button.active {
+        background-color: #a2d4f6;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* Business Cards Grid View */
+    #businessContainer.grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .business-card {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .business-card img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    /* List View */
+    #businessContainer.list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .business-card.list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .business-card.list img {
+        width: 100px;
+    }
+
+    #businessContainer.grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    
+    #businessContainer.list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .business-card {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    .business-card:hover {
+        transform: scale(1.12);
+    }
+    
+    .business-card img {
+        width: 100%;
+        max-height: 150px;
+        object-fit: contain;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+}

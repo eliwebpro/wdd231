@@ -3,12 +3,42 @@ document.getElementById("lastModified").textContent += document.lastModified;
 
 document.addEventListener("DOMContentLoaded", () => {
     // hamburger menu
-    const menuButton = document.getElementById("menuBtn");
+    const menuBtn = document.getElementById("menuBtn");
     const navMenu = document.getElementById("navMenu");
 
-    menuButton.addEventListener("click", () => {
+    menuBtn.addEventListener("click", () => {
         navMenu.classList.toggle("show");
+        menuBtn.classList.toggle("open");
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Get the current page URL (removing extra parameters)
+    const currentPage = window.location.pathname.split("/").pop();
+
+    // Select all navigation links
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute("href").split("/").pop();
+
+        // Compare link with current page and set active class
+        if (linkPage === currentPage || (currentPage === "" && linkPage === "index.html")) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active"); // Ensure inactive pages do not stay highlighted
+        }
     });
+
+    // Hamburger Menu Toggle
+    const menuBtn = document.getElementById("menuBtn");
+    const navMenu = document.getElementById("navMenu");
+
+    menuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+        menuBtn.classList.toggle("open");
+    });
+});
+
 
 
 
