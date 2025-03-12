@@ -74,7 +74,14 @@ body {
         transform: scale(1.5);
     }
 
-
+    nav ul li a.active {
+        background-color: #005fa3;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 8px 12px;
+        text-decoration: none;
+    }
 
     /* main */
     main {
@@ -90,6 +97,9 @@ body {
     /* main img arch utah */
     main section img {
         display: block;
+        width: 350px;
+        margin: 5px;
+        border-radius: 10px;
     }
 
 
