@@ -249,7 +249,7 @@ body {
     }
     #businessContainer :hover{
         font-weight: bold;
-        scale: 1.05;
+        scale: 1.03;
         background-color: rgb(211, 211, 211);
     }
      /* List View */
