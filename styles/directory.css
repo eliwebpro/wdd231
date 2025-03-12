@@ -185,15 +185,16 @@ body {
         border-radius: 8px;
     }
 }
-body {
-    font-family: 'Roboto', sans-serif;
-}
 
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+    background: #013a63;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 
