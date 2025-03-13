@@ -9,7 +9,7 @@ body {
 
 
 /* weather */
-#weather-container h2 {
+#weather-container h2{
     grid-column: 1 / -1; /* Ocupa todas as colunas */
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
@@ -176,9 +176,9 @@ body {
         padding: 8px 12px;
         text-decoration: none;
     }
-    h1{
+    h1, h4 {
         text-align: center;
-        font-size: 3rem;
+        font-size: 3rem; /* Mesmo tamanho da fonte */
         padding: 10px;
         background: #013a63;
         color: white;
@@ -186,17 +186,9 @@ body {
         margin-bottom: 10px;
         width: 100%;
     }
-    h2{
-        text-align: center;
-        font-size: 2rem;
-        padding: 10px;
-        background: #013a63;
-        color: white;
-        border-radius: 8px;
-        margin-bottom: 10px;
-        width: 100%;
-    }
-    Main
+    
+    
+    
     main {
         display: flex;
         flex-direction: column;
@@ -205,6 +197,16 @@ body {
         background: white;
         border-radius: 10px;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .directory-header {
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color: #f8f8f8;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+        width: 100%;
+
     }
     /* Botões de alternância */
     .toggle-buttons {
@@ -245,14 +247,24 @@ body {
         background-color: #f8f8f8;
         padding: 20px;
         border-radius: 10px;
+        transition: transform 0.2s ease-in-out;
 
     }
-    #businessContainer :hover{
-        font-weight: bold;
-        scale: 1.03;
-        background-color: rgb(211, 211, 211);
+    .business-card {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.2s ease-in-out;
     }
-     /* List View */
+    
+    .business-card:hover {
+        transform: scale(1.1);
+        background-color: rgb(211, 211, 211);
+
+    }
+   
      #businessContainer.list {
         display: flex;
         flex-direction: column;
@@ -404,7 +416,7 @@ body {
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
     }
 
-    h1 {
+    h1, h4 {
         text-align: center;
         padding: 10px;
         background: #013a63;
