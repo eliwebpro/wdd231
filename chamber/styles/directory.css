@@ -2,22 +2,18 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f8f8;
 }
-
 .business-card img {
-    width: 100px;
+    width: 100px; 
     height: auto;
 }
 
 
 /* weather */
 #weather-container h2 {
-    grid-column: 1 / -1;
-    /* Ocupa todas as colunas */
+    grid-column: 1 / -1; /* Ocupa todas as colunas */
     display: flex;
-    justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: center;
-    /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
@@ -27,12 +23,10 @@ body {
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 /* Estilos para a seção do clima */
 #weather-container {
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    /* Divide a tela em duas partes */
+    grid-template-columns: 2fr 2fr; /* Divide a tela em duas partes */
     gap: 20px;
     align-items: center;
     justify-content: center;
@@ -123,7 +117,6 @@ body {
         max-width: 1200px;
         margin: 0 auto;
     }
-
     /* Header */
     header {
         display: flex;
@@ -153,11 +146,9 @@ body {
         border-radius: 8px;
         padding: 10px;
     }
-
-    nav button {
+      nav button {
         display: none;
     }
-
     nav ul {
         display: flex;
         justify-content: space-around;
@@ -185,8 +176,7 @@ body {
         padding: 8px 12px;
         text-decoration: none;
     }
-
-    h1 {
+    h1{
         text-align: center;
         font-size: 3rem;
         padding: 10px;
@@ -196,9 +186,7 @@ body {
         margin-bottom: 10px;
         width: 100%;
     }
-
-    h2,
-    h4 {
+    h2, h{
         text-align: center;
         font-size: 2rem;
         padding: 10px;
@@ -208,7 +196,6 @@ body {
         margin-bottom: 10px;
         width: 100%;
     }
-
     /* Main */
     main {
         display: flex;
@@ -219,7 +206,6 @@ body {
         border-radius: 10px;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
     }
-
     /* Botões de alternância */
     .toggle-buttons {
         display: flex;
@@ -248,7 +234,7 @@ body {
         transform: scale(1.15);
     }
 
-
+    
     /* list grif */
     #businessContainer {
         display: grid;
@@ -261,15 +247,13 @@ body {
         border-radius: 10px;
 
     }
-
-    #businessContainer :hover {
+    #businessContainer :hover{
         font-weight: bold;
         scale: 1.03;
         background-color: rgb(211, 211, 211);
     }
-
-    /* List View */
-    #businessContainer.list {
+     /* List View */
+     #businessContainer.list {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -279,7 +263,6 @@ body {
         padding: 20px;
         border-radius: 10px;
     }
-
     .business-card.list {
         display: flex;
         flex-direction: row;
@@ -305,7 +288,6 @@ body {
         background-color: #f8f8f8;
         margin: 0 auto;
     }
-
     #listView {
         display: none;
     }
@@ -388,8 +370,7 @@ body {
         width: 100%;
         padding: 10px 0;
     }
-
-    /* Estilização dos itens do menu */
+      /* Estilização dos itens do menu */
     nav ul li {
         padding: 10px;
         text-align: center;
@@ -412,7 +393,6 @@ body {
         padding: 8px 12px;
         text-decoration: none;
     }
-
     /* Main Content */
     main {
         display: flex;
@@ -435,7 +415,6 @@ body {
         font-size: 2rem;
 
     }
-
     h2 {
         text-align: center;
         padding: 10px;
@@ -446,7 +425,6 @@ body {
         width: 100%;
         font-size: 1.5rem;
     }
-
     /* Toggle Buttons */
     .toggle-buttons {
         display: flex;
@@ -468,51 +446,52 @@ body {
         color: black;
         font-weight: bold;
     }
-}
+    }
 
-/* Business Container */
-#businessContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 15px;
-    padding: 5px;
-}
+    /* Business Container */
+    #businessContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 15px;
+        padding: 5px;
+    }
+    .business-card img {
+        width: 100%;
+        max-height: 150px;
+        object-fit: contain;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+     /* Estilizando os cartões como blocos */
+     .business-card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    /* Ajustar imagens na grid */
+    .business-card img {
+        width: 100%;
+        max-height: 150px;
+        object-fit: contain;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
 
-.business-card img {
-    width: 100%;
-    max-height: 150px;
-    object-fit: contain;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 10px;
+        background: #013a63;
+        color: white;
+        border-radius: 8px;
+    }
 
-/* Estilizando os cartões como blocos */
-.business-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    
 
-/* Ajustar imagens na grid */
-.business-card img {
-    width: 100%;
-    max-height: 150px;
-    object-fit: contain;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #013a63;
-    color: white;
-    border-radius: 8px;
-}
