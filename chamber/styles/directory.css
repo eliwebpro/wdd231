@@ -53,9 +53,11 @@ body {
 }
 
 #weather img {
-    width: 200px;
-    height: 200px;
+    width: 100px; /* Defina um tamanho apropriado */
+    height: 100px;
+    image-rendering: crisp-edges; /* Melhora a nitidez em algumas telas */
 }
+
 
 #weather p {
     font-size: 1.2rem;

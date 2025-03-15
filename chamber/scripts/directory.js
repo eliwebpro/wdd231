@@ -1,7 +1,7 @@
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
-const url = "../chamber/data/members.json";
+const url = "data/members.json"; // Ajustado para caminho correto
 const businessContainer = document.getElementById("businessContainer");
 let businesses = [];
 
@@ -11,7 +11,7 @@ async function getBusinesses() {
         if (!response.ok) throw new Error("Failed to fetch data");
         const data = await response.json();
         businesses = data.members;
-        displayBusinesses("grid");
+        displayBusinesses("grid"); // Inicializa como grid
     } catch (error) {
         console.error("Error loading business data:", error);
     }
@@ -20,7 +20,7 @@ async function getBusinesses() {
 function displayBusinesses(view) {
     // Force grid view on small screens
     if (window.innerWidth <= 763) {
-        view = "grid"; // Override user selection
+        view = "grid"; // Ignora a escolha do usuário para telas pequenas
     }
 
     businessContainer.innerHTML = "";
@@ -30,18 +30,13 @@ function displayBusinesses(view) {
         const card = document.createElement("div");
         card.classList.add("business-card", view);
 
-        const img = document.createElement("img");
-        img.src = `../chamber/images/${business.image}`;
-        img.alt = `${business.name} logo`;
-        img.loading = "lazy";
-
         if (view === "grid") {
             const img = document.createElement("img");
-            img.src = `../chamber/images/${business.image}`;
+            img.src = `images/${business.image}`;
             img.alt = `${business.name} logo`;
+            img.loading = "lazy";
             card.appendChild(img);
         }
-
         const name = document.createElement("h3");
         name.textContent = business.name;
 
@@ -92,7 +87,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 // Weather API Config
-const apiKey = "48f8472cc4e8fc9654e4c091ac2ea830"; // Sua API Key do OpenWeatherMap
+const apiKey = "48f8472cc4e8fc9654e4c091ac2ea830"; // API Key do OpenWeatherMap
 const lat = "41.0896"; // Latitude de Syracuse, Utah
 const lon = "-112.0647"; // Longitude de Syracuse, Utah
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
@@ -114,7 +109,7 @@ async function getWeather() {
         // Atualizando no HTML
         document.getElementById("weather").innerHTML = `
             <p>${temperature}°F - ${weatherDescription}</p>
-            <img src="https://openweathermap.org/img/wn/${weatherIcon}@2x.png" alt="Ícone do clima">
+            <img src="https://openweathermap.org/img/wn/${weatherIcon}@4x.png" alt="Weather icon">
         `;
     } catch (error) {
         console.error("Error getting weather data:", error);
@@ -149,7 +144,7 @@ async function getForecast() {
             forecastContainer.innerHTML += `
                 <div class="forecast-item">
                     <p><strong>${date}</strong></p>
-                    <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="Weather icon">
+                    <img src="https://openweathermap.org/img/wn/${icon}@4x.png" alt="Weather icon">
                     <p>${temp}°F - ${desc}</p>
                 </div>
             `;
