@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Syracuse Chamber of Commerce - Home Page">
+    <meta name="author" content="Eliezio Marques da Silva">
+
+    <title>Syracuse Chamber of Commerce - Home</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+    
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <img src="images/chamber.webp" alt="Chamber of Commerce">
+      <span>Syracuse Chamber of Commerce</span>
+    </header>
+
+    <nav>
+      <button id="menuBtn"></button>
+      <ul id="navMenu">
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <img src="images/syracuse.jpg" alt="Welcome to Syracuse, Utah">
+        <h1>Welcome to Syracuse Chamber of Commerce</h1>
+        <p>Connecting businesses and the community for a stronger economy.</p>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </section>
+
+      <!-- Weather Section -->
+      <section id="weather-container">
+        <h2>Current Weather in Syracuse, Utah</h2>
+        <div id="weather"></div>
+      </section>
+
+      <!-- News & Events -->
+      <section class="events">
+        
+        <h2>Upcoming Events</h2>
+        <div class="event">
+          <h3>Syracuse Farmers Market</h3>
+          <p>📅 Every Saturday - 8:00 AM | <a href="https://maps.app.goo.gl/aqt4eY2ee29ce9t86" target="_blank">📍 Syracuse Regional Museum</a></p>
+          <a href="https://www.syracuseut.gov/calendar.aspx">See More</a>
+
+        </div>
+        <div class="event">
+          <h3>Syracuse City Calender</h3>
+          <a href="https://www.syracuseut.gov/calendar.aspx" target="_blank">Learn More</a>
+        </div>
+        
+      </section>
+
+      <!-- Business Spotlight -->
+      <section class="business-spotlight">
+        <h2>business spotlights</h2>
+        <div class="spotlight">
+          <img src="images/lees_marketplace.webp" alt="Local Business">
+          <p><strong>Lee’s Marketplace</strong> - Your local grocery store with fresh produce and quality meats.</p>
+          <a href="directory.html">Explore More</a>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="cta">
+        <h2>Support Local Businesses</h2>
+        <p>Discover and support businesses in Syracuse, Utah. Connect with professionals and local entrepreneurs.</p>
+        <a href="directory.html" class="cta-button">Browse Directory</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Syracuse Chamber of Commerce | Utah, USA</p>
+      <p id="lastModified">Last Modified: </p>
+    </footer>
+  </body>
+</html>
