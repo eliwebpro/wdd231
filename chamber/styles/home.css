@@ -125,7 +125,7 @@ body {
     }
 
     nav ul li a.active {
-        background-color: #005fa3;
+        background-color: #013a63;
         color: white;
         font-weight: bold;
         border-radius: 5px;
@@ -140,6 +140,9 @@ body {
         width: 100%;
         max-width: 600px;
         border-radius: 10px;
+        background: #f8f8f8;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
     }
 
     .hero img {
@@ -156,6 +159,7 @@ body {
 
     .hero p {
         font-size: 1.2rem;
+        color: #000;
     }
 
     .cta-button {
@@ -208,7 +212,7 @@ body {
 
     .event a {
         text-decoration: none;
-        color: #005fa3;
+        color: #013a63;
         font-weight: bold;
     }
 
@@ -364,7 +368,7 @@ body {
     #menuBtn.open::before {
         content: "✖";
         font-size: 24px;
-        background-color: #005fa3;
+        background-color: #013a63;
 
     }
 
@@ -405,7 +409,7 @@ body {
 
     /* Estilização do link ativo */
     nav ul li a.active {
-        background-color: #005fa3;
+        background-color: #013a63;
         color: white;
         font-weight: bold;
         border-radius: 5px;
