@@ -36,7 +36,7 @@ function displayBusinesses(view) {
             img.loading = "lazy";
             card.appendChild(img);
         }
-        const name = document.createElement("h3");
+        const name = document.createElement("h2");
         name.textContent = business.name;
 
         const address = document.createElement("p");
