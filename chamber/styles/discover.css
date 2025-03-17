@@ -2,15 +2,33 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f8f8;
 }
-.business-card img {
-    width: 100px; 
-    height: auto;
+
+
+/* mapa */
+#map {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
+#map iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
 
+ /* Footer */
+ footer {
+    text-align: center;
+    padding: 10px;
+    background: #013a63;
+    color: white;
+    border-radius: 8px;
+}
 /* weather */
 #weather-container h2{
-    grid-column: 1 / -1; /* Ocupa todas as colunas */
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
@@ -25,8 +43,6 @@ body {
 }
 /* Estilos para a seção do clima */
 #weather-container {
-    display: grid;
-    grid-template-columns: 2fr 2fr; /* Divide a tela em duas partes */
     gap: 20px;
     align-items: center;
     justify-content: center;
@@ -43,7 +59,6 @@ body {
 /* Clima atual (lado esquerdo) */
 #weather {
     display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     background: white;
@@ -53,9 +68,9 @@ body {
 }
 
 #weather img {
-    width: 100px; /* Defina um tamanho apropriado */
+    width: 100px; 
     height: 100px;
-    image-rendering: crisp-edges; /* Melhora a nitidez em algumas telas */
+    image-rendering: crisp-edges; 
 }
 
 
@@ -64,51 +79,12 @@ body {
     font-weight: bold;
     color: #013a63;
 }
-
-/* Container da previsão dos próximos dias */
-#forecast {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Cada item da previsão */
-.forecast-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-
-.forecast-item:last-child {
-    border-bottom: none;
-}
-
-/* Ícone da previsão */
-.forecast-item img {
-    width: 40px;
-    height: 40px;
-}
-
-/* Nome do dia e temperatura */
-.forecast-item p {
-    margin: 0;
-    font-size: 1rem;
-    color: #013a63;
-}
-
-/* Responsividade para telas menores */
 @media (max-width: 600px) {
     #weather-container {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
@@ -201,89 +177,183 @@ body {
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
     }
 
-    .directory-header {
-        border-radius: 10px;
-        padding: 10px;
-        margin-bottom: 15px;
-        background-color: #f8f8f8;
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-        width: 100%;
-
-    }
-    /* Botões de alternância */
-    .toggle-buttons {
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        margin: 20px 0;
-    }
-
-    .toggle-buttons button {
-        padding: 10px;
-        background: #013a63;
-        color: white;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: transform 0.2s ease-in-out;
-    }
-
-    .toggle-buttons button.active {
-        background-color: #a2d4f6;
-        color: black;
-        font-weight: bold;
-    }
-
-    .toggle-buttons button:hover {
-        transform: scale(1.15);
-    }
-
-    
-    /* list grif */
-    #businessContainer {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        width: 100%;
-        max-width: 1200px;
-        background-color: #f8f8f8;
+    #history {
+        background: #f8f8f8;
         padding: 20px;
-        border-radius: 10px;
-        transition: transform 0.2s ease-in-out;
-
-    }
-    .business-card {
-        background: white;
-        padding: 15px;
         border-radius: 10px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         text-align: center;
-        transition: transform 0.2s ease-in-out;
+        margin-bottom: 20px;
     }
     
-    .business-card:hover {
-        transform: scale(1.1);
-        background-color: rgb(211, 211, 211);
-
-    }
-   
-     #businessContainer.list {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    #history img {
         width: 100%;
-        max-width: 1200px;
-        background-color: #f8f8f8;
+        max-width: 600px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+    
+    .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between the sections */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
+    padding: 20px;
+    }
+
+    /* Style for each section */
+    #demographics, #events {
+        background: #f8f8f8;
         padding: 20px;
         border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        color: #013a63;
     }
-    .business-card.list {
-        display: flex;
-        flex-direction: row;
+
+    /* Hover effect for the entire section */
+    #demographics:hover, #events:hover {
+        transform: scale(1.03); /* Slightly enlarges the section */
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Ensures lists are styled properly */
+    #demographics ul, #events ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #demographics ul li, #events ul li {
+        font-size: 1.1rem;
+        padding: 5px 0;
+        color: #013a63; /* Ensures list text color stays dark blue */
+    }
+
+    /* Title Color */
+    #demographics h2, #events h2 {
+        color: #013a63; /* Ensuring the headings remain dark blue */
+    }
+
+    /* Link Styling */
+    #demographics a, #events a {
+        display: inline-block;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #013a63;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+
+    /* Hover Effect on Links */
+    #demographics a:hover, #events a:hover {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    
+    /* Galeria de Imagens */
+    #gallery {
+        text-align: center; /* Centers everything inside the section */
+        max-width: 1200px; /* Restricts width for large screens */
+        margin: 0 auto; /* Centers the section */
+        padding: 20px;
+        background: #f8f8f8;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    
+    /* Style for the title */
+    #gallery h2 {
+        font-size: 2rem;
+        color: #013a63;
+        margin-bottom: 20px;
+    }
+    
+    /* Image Montage - Displays images in a block layout */
+    .image-montage {
+        display: block;
+        grid-template-columns: 1fr 1fr 1fr; /* Three columns for large screens */
+        gap: 20px; /* Spacing between items */
+        justify-content: center; /* Centers the grid */
         align-items: center;
-        padding: 10px;
-        gap: 15px;
+        max-width: 1000px;
+        margin: 0 auto; /* Centers the grid container */
     }
+    
+    /* Styling for images */
+    .image-montage img {
+        width: 100%; /* Makes the images fill the container */
+        max-width: 300px; /* Restricts max size */
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    /* Image hover effect */
+    .image-montage img:hover {
+        transform: scale(1.05);
+    }
+    
+    /* Style for links */
+    .image-montage a {
+        display: block; /* Makes the links appear below each image */
+        text-decoration: underline;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #013a63;
+        margin-top: 5px;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    /* Link hover effect */
+    .image-montage a:hover {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    /* Responsive Design for Small Screens */
+    @media (max-width: 768px) {
+        .image-montage {
+            grid-template-columns: 1fr; /* Switch to single column layout */
+            gap: 15px;
+        }
+    
+        .image-montage img {
+            max-width: 100%; /* Allows images to adjust for small screens */
+        }
+    }
+    
+    /* Mapa */
+    #map {
+        background: #f8f8f8;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    #map iframe {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+    }
+    
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .image-montage img {
+            width: 45%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .image-montage img {
+            width: 100%;
+        }
+    
 
     /* Footer */
     footer {
@@ -293,7 +363,7 @@ body {
         color: white;
         border-radius: 8px;
     }
-}
+}}
 
 
 /* small sizes */
@@ -302,11 +372,7 @@ body {
         background-color: #f8f8f8;
         margin: 0 auto;
     }
-    #listView {
-        display: none;
-    }
-
-    /* Header */
+     /* Header */
     header {
         display: flex;
         color: #fff;
@@ -439,178 +505,25 @@ body {
         width: 100%;
         font-size: 1.5rem;
     }
-    /* Toggle Buttons */
-    .toggle-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 10px;
-    }
 
-    .toggle-buttons button {
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        border-radius: 5px;
-    }
-
-
-    .toggle-buttons button.active {
-        background-color: #a2d4f6;
-        color: black;
-        font-weight: bold;
-    }
-    }
-
-    /* Business Container */
-    #businessContainer {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 15px;
-        padding: 5px;
-    }
-    .business-card img {
+    #history img {
         width: 100%;
-        max-height: 150px;
-        object-fit: contain;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-     /* Estilizando os cartões como blocos */
-     .business-card {
-        background: white;
-        padding: 20px;
+        max-width: 600px;
         border-radius: 10px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin-top: 15px;
     }
-   
-    /* Ajustar imagens na grid */
-    .business-card img {
+    .image-montage img {
         width: 100%;
-        max-height: 150px;
-        object-fit: contain;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-
-    /* Footer */
-    footer {
-        text-align: center;
-        padding: 10px;
-        background: #013a63;
-        color: white;
-        border-radius: 8px;
+        max-width: 600px;
+        border-radius: 10px;
+        margin-top: 15px;
     }
     
-    /* Adições para Discover Page */
-
-/* Seção de História */
-#history {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#history img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    margin-top: 15px;
-}
-
-/* Seção de Demografia */
-#demographics {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-#demographics ul {
-    list-style: none;
-    padding: 0;
-}
-
-#demographics li {
-    font-size: 1.2rem;
-    padding: 5px 0;
-    color: #013a63;
-}
-
-/* Seção de Eventos */
-#events {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-#events ul {
-    list-style: none;
-    padding: 0;
-}
-
-#events li {
-    font-size: 1.2rem;
-    padding: 5px 0;
-    color: #013a63;
-    font-weight: bold;
-}
-
-/* Galeria de Imagens */
-#gallery {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.image-montage {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.image-montage img {
-    width: 30%;
-    max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Mapa */
-#map {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-#map iframe {
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .image-montage img {
-        width: 45%;
-    }
-}
-
-@media (max-width: 480px) {
-    .image-montage img {
-        width: 100%;
-    }
+    
+    
+    /* Responsive adjustments for smaller screens */
+    
+    
+   
+    
 }

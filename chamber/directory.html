@@ -29,6 +29,8 @@
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/footer.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -57,12 +59,8 @@
     </nav>
 
     <main>
-      <h1>Directory</h1>
-
-     
-
       <div class="directory-header">
-        <h4>Business</h4>
+        <h1> Directory Business</h1>
         <div class="toggle-buttons">
           <button id="gridView" class="active">Grid View</button>
           <button id="listView">List View</button>
@@ -71,6 +69,12 @@
 
       <!-- Business Listings -->
       <div id="businessContainer" class="grid"></div>
+
+      <!-- Weather Section -->
+      <section id="weather-container">
+        <h2>Weather</h2>
+        <div id="weather"></div>
+      </section>
     </main>
 
     <footer>

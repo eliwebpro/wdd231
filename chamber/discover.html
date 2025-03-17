@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Syracuse, Utah – History, Demographics, and Events">
+    <meta name="description" content="Discover Syracuse, Utah History, Demographics, and Events">
     <meta name="author" content="Eliezio Marques da Silva">
 
     <meta property="og:title" content="Discover Syracuse, Utah">
@@ -16,8 +16,10 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/discover.css">
+
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/footer.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +45,7 @@
     </nav>
 
     <main>
-        <h1>Discover Syracuse, Utah</h1>
+        <h1>Discover Syracuse</h1>
 
         <!-- História Local -->
         <section id="history">
@@ -51,45 +53,67 @@
             <p>
                 Syracuse, Utah, was founded in the late 1800s as a small farming community. Over the years, it has grown into a thriving city with a strong local economy and a rich cultural heritage.
             </p>
-            <img src="images/history_syracuse.webp" alt="Historic Syracuse">
+            <img src="images/historic_syracuse.webp" alt="Historic Syracuse">
         </section>
 
-        <!-- Demografia -->
-        <section id="demographics">
-            <h2>Current Demographics</h2>
-            <ul>
-                <li>Population: ~32,000 residents</li>
-                <li>Median Household Income: $90,000</li>
-                <li>Top Industries: Healthcare, Retail, Technology</li>
-                <li>Average Temperature: 50°F (Annual)</li>
-            </ul>
-        </section>
+        
 
-        <!-- Eventos Atuais -->
-        <section id="events">
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li><strong>Water Lantern Festival</strong> - August 1st at Jensen Nature Park</li>
-                <li><strong>Syracuse City Easter Egg Hunt</strong> - April 19th</li>
-                <li><strong>Fall Iceberg Market</strong> - September 13th</li>
-            </ul>
-        </section>
+        <!-- Grid Container -->
+<div class="info-grid">
+  <!-- Demographics -->
+  <section id="demographics">
+      <h2>Current Demographics</h2>
+      <ul>
+          <li><strong>Population:</strong> ~35,500 residents</li>
+          <li><strong>Household Income:</strong> $137,000</li>
+          <li><strong>Median resident age:</strong> 29.2</li>
+          <li><strong>Median House Value:</strong> ~$608,000</li>
+          <a href="https://www.city-data.com/city/Syracuse-Utah.html">Source</a>
+      </ul>
+  </section>
+
+  <!-- Events -->
+  <section id="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+          <li><strong>Water Lantern Festival</strong> - August 1st at Jensen Nature Park</li>
+          <li><strong>Syracuse City Easter Egg Hunt</strong> - April 19th</li>
+          <li><strong>Fall Iceberg Market</strong> - September 13th</li>
+          <a href="https://www.syracuseut.gov/calendar.aspx" target="_blank">See More</a>
+      </ul>
+  </section>
+</div>
+
 
         <!-- Galeria de Imagens -->
         <section id="gallery">
             <h2>Explore Syracuse</h2>
             <div class="image-montage">
-                <img src="images/antelope_island.webp" alt="Antelope Island">
-                <img src="images/sunset_syracuse.webp" alt="Syracuse Sunset">
-                <img src="images/jensen_nature_park.webp" alt="Jensen Nature Park">
+                <img src="images/antelope-island.webp" alt="Antelope Island">
+                <a href="https://maps.app.goo.gl/DzQbYJaXK4HfdTgi7" target="_blank">Antelope Island</a>
+                
+                
+                <img src="images/antelope-bmx.webp" alt="Syracuse Sunset">
+                <a href="https://maps.app.goo.gl/inn94VYWpTCZJ2wG8" target="_blank">Antelope BMXe</a>
+
+
+                <img src="images/jasen-park.webp" alt="Jensen Nature Park">
+                <a href="https://maps.app.goo.gl/mwBAiarC6DfQne2t8" target="_blank">Jensen Nature Park</a>
+                
             </div>
         </section>
 
-        <!-- Mapa -->
+        <!-- mapa -->
         <section id="map">
-            <h2>Find Us</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.098080378635!2d-112.063214024073!3d41.089277321530204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752fa719c9f1e8b%3A0x4b4c12f0f0c4f9e2!2sSyracuse%2C%20UT%2084075!5e0!3m2!1sen!2sus!4v1649785671234" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <h2>Syracuse</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96236.86225818656!2d-112.15804520746012!3d41.082063670336154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752fd0925f39bdd%3A0x66de35e949280ee1!2sSyracuse%2C%20UT!5e0!3m2!1sen!2sus!4v1742165412240!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+
+        <!-- Weather Section -->
+      <section id="weather-container">
+        <h2>Weather</h2>
+        <div id="weather"></div>
+      </section>
     </main>
 
     <footer>

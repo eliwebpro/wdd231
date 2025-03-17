@@ -3,46 +3,45 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce Directory Page for Syracuse, Utah">
+    <meta name="description" content="Join the Syracuse Chamber of Commerce and enjoy exclusive benefits.">
     <meta name="author" content="Eliezio Marques da Silva">
 
     <!-- Open Graph (Facebook) -->
-    <meta property="og:title" content="Syracuse Chamber of Commerce - Directory">
+    <meta property="og:title" content="Join the Syracuse Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://eliwebpro.github.io/wdd231/chamber/images/chamber.webp">
-    <meta property="og:url" content="https://eliwebpro.github.io/wdd231/chamber/directory.html">
-    <meta property="og:description" content="Discover local businesses in Syracuse, Utah, and connect with Chamber of Commerce members.">
+    <meta property="og:image" content="images/chamber.webp">
+    <meta property="og:url" content="join.html">
+    <meta property="og:description" content="Join the chamber and gain access to business growth opportunities, networking, advertising, and more.">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@seuTwitter">
-    <meta name="twitter:title" content="WDD 231 - Course Home">
-    <meta name="twitter:description" content="Explore my web development projects and coursework for WDD 231 - Web Frontend Development.">
-    <meta name="twitter:image" content="https://eliwebpro.github.io/wdd231/chamber/images/chamber.webp">
-    <meta name="twitter:url" content="https://eliwebpro.github.io/wdd231/">
+    <meta name="twitter:title" content="Join the Syracuse Chamber">
+    <meta name="twitter:description" content="Expand your business network and access exclusive chamber benefits.">
+    <meta name="twitter:image" content="images/chamber.webp">
+    <meta name="twitter:url" content="join.html">
 
-    <title>Syracuse Chamber - Directory</title>
+    <title>Join the Syracuse Chamber</title>
 
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/join.css" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
 
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/footer.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon.ico">
   </head>
 
   <body>
     <header>
-      <img src="images/chamber.webp" alt="Chamber of Commerce" />
-      <span>Syracuse Chamber - Directory</span>
+      <img src="images/chamber.webp" alt="Chamber of Commerce">
+      <span>Syracuse Chamber - Join</span>
     </header>
 
     <nav>
@@ -50,17 +49,77 @@
       <ul id="navMenu">
         <li><a href="home.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
-        <li><a href="directory.html" >Directory</a></li>
+        <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html" class="active">Join</a></li>
       </ul>
     </nav>
 
     <main>
-      <h1>Join</h1>
+      <h1>Join the Syracuse Chamber</h1>
 
-     
+      <!-- Membership Benefits Section -->
+      <section id="membership-benefits">
+        <h4>Why Join the Chamber?</h4>
+        <p>Joining the Syracuse Chamber of Commerce opens doors to exclusive business resources, networking opportunities, advertising options, and community involvement.</p>
 
-    
+        <div class="membership-levels">
+          <div class="membership-card">
+            <h3>Non-Profit</h3>
+            <p>✔ Basic directory listing</p>
+            <p>✔ Access to publications & trainings</p>
+            <p>✔ Community engagement</p>
+            <p class="price">$0/month</p>
+          </div>
+
+          <div class="membership-card">
+            <h3>Silver</h3>
+            <p>✔ Directory listing & featured spotlights</p>
+            <p>✔ Social media promotions</p>
+            <p>✔ Monthly networking luncheons</p>
+            <p class="price">$25/month</p>
+          </div>
+
+          <div class="membership-card">
+            <h3>Gold</h3>
+            <p>✔ All Silver benefits</p>
+            <p>✔ Business sponsorship opportunities</p>
+            <p>✔ Exclusive advertising options</p>
+            <p class="price">$50/month</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Membership Form -->
+      <section id="membership-form">
+        <h4>Membership Application</h4>
+        <form action="#" method="post">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="business">Business Name:</label>
+          <input type="text" id="business" name="business">
+
+          <label for="membership">Select Membership Level:</label>
+          <select id="membership" name="membership">
+            <option value="non-profit">Non-Profit (Free)</option>
+            <option value="silver">Silver ($25/month)</option>
+            <option value="gold">Gold ($50/month)</option>
+          </select>
+
+          <label for="comments">Additional Comments:</label>
+          <textarea id="comments" name="comments" rows="4"></textarea>
+
+          <button type="submit">Apply Now</button>
+        </form>
+      </section>
+
+      
     </main>
 
     <footer>
