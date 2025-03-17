@@ -1,25 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce Directory Page for Syracuse, Utah">
-    <meta name="author" content="Eliezio Marques da Silva">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chamber of Commerce Directory Page for Syracuse, Utah" />
+    <meta name="author" content="Eliezio Marques da Silva" />
 
     <!-- Open Graph (Facebook) -->
-    <meta property="og:title" content="Syracuse Chamber of Commerce - Directory">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://eliwebpro.github.io/wdd231/chamber/images/chamber.webp">
-    <meta property="og:url" content="https://eliwebpro.github.io/wdd231/chamber/directory.html">
-    <meta property="og:description" content="Discover local businesses in Syracuse, Utah, and connect with Chamber of Commerce members.">
+    <meta
+      property="og:title"
+      content="Syracuse Chamber of Commerce - Directory" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://eliwebpro.github.io/wdd231/chamber/images/chamber.webp" />
+    <meta
+      property="og:url"
+      content="https://eliwebpro.github.io/wdd231/chamber/directory.html" />
+    <meta
+      property="og:description"
+      content="Discover local businesses in Syracuse, Utah, and connect with Chamber of Commerce members." />
 
     <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@seuTwitter">
-    <meta name="twitter:title" content="WDD 231 - Course Home">
-    <meta name="twitter:description" content="Explore my web development projects and coursework for WDD 231 - Web Frontend Development.">
-    <meta name="twitter:image" content="https://eliwebpro.github.io/wdd231/chamber/images/chamber.webp">
-    <meta name="twitter:url" content="https://eliwebpro.github.io/wdd231/">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@seuTwitter" />
+    <meta name="twitter:title" content="WDD 231 - Course Home" />
+    <meta
+      name="twitter:description"
+      content="Explore my web development projects and coursework for WDD 231 - Web Frontend Development." />
+    <meta
+      name="twitter:image"
+      content="https://eliwebpro.github.io/wdd231/chamber/images/chamber.webp" />
+    <meta name="twitter:url" content="https://eliwebpro.github.io/wdd231/" />
 
     <title>Syracuse Chamber - Directory</title>
 
@@ -30,7 +44,6 @@
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/weather.js" defer></script>
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,7 +62,7 @@
     </header>
 
     <nav>
-      <button id="menuBtn"></button>
+      <button id="menuBtn" aria-label="Open navigation menu"></button>
       <ul id="navMenu">
         <li><a href="home.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
@@ -60,7 +73,7 @@
 
     <main>
       <div class="directory-header">
-        <h1> Directory Business</h1>
+        <h1>Directory Business</h1>
         <div class="toggle-buttons">
           <button id="gridView" class="active">Grid View</button>
           <button id="listView">List View</button>
