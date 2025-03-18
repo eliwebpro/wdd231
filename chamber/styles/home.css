@@ -56,6 +56,17 @@ body {
     color: #013a63;
 }
 
+.slb {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.slb a {
+    color: #0000ee;
+}
 
 /* Responsividade para telas menores */
 @media (max-width: 600px) {
@@ -207,7 +218,7 @@ body {
 
     .event a {
         text-decoration: underline;
-        color: #035793;
+        color: #0000ee;
         font-weight: bold;
     }
 
@@ -215,26 +226,74 @@ body {
         text-decoration: underline;
     }
 
-    /* Business Spotlight */
+    /* spotlight  */
     .business-spotlight {
-        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
         padding: 20px;
-        margin: 20px auto;
-        background: #f8f8f8;
+        background-color: #f8f8f8;
+        text-align: center;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .spotlight img {
-        max-width: 200px;
+        margin-bottom: 30px;
+        }
+        
+        .business-spotlight h2 {
+        grid-column: span 2; 
+        text-align: center;
+        font-size: 1.8rem;
+        background-color: #013a63;
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+        }
+        
+    
+    .spotlight {
+        background: white;
+        padding: 15px;
         border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
     }
-
-    .spotlight p {
+    
+    .spotlight:hover {
+        transform: scale(1.05);
+    }
+    
+    .spotlight img {
+        width: auto;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .spotlight h3 {
         font-size: 1.2rem;
+        color: #000;
+        margin: 10px 0;
     }
-
+    
+    .spotlight p {
+        font-size: 1rem;
+        color: #555;
+    }
+    
+    .spotlight a {
+        display: block;
+        margin-top: 10px;
+        padding: 8px 12px;
+        color: 005fa3;
+        text-decoration: underline;
+        border-radius: 5px;
+        font-weight: bold;
+        
+    }
+    
+    
     /* CTA Section */
     .cta {
         text-align: center;
@@ -287,7 +346,7 @@ body {
         width: 100%;
 
     }
-    /* Botões de alternância */
+   
    
 
     
