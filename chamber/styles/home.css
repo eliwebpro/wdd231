@@ -279,7 +279,7 @@ body {
     
     .spotlight p {
         font-size: 1rem;
-        color: #555;
+        color: #333;
     }
     
     .spotlight a {
@@ -420,12 +420,12 @@ body {
 
     /* Ícone de hambúrguer e 'X' */
     #menuBtn::before {
-        content: "☰";
+        content: "☰ Menu";
         font-size: 24px;
     }
 
     #menuBtn.open::before {
-        content: "✖";
+        content: "✖ Close";
         font-size: 24px;
         background-color: #013a63;
 

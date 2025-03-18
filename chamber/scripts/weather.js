@@ -1,5 +1,5 @@
 // Weather API Config
-const apiKey = "48f8472cc4e8fc9654e4c091ac2ea830"; // API Key do OpenWeatherMap
+const apiKey = "d07981466ee03629ca93efe9891f3378"; // API Key do OpenWeatherMap
 const lat = "41.0896"; // Latitude de Syracuse, Utah
 const lon = "-112.0647"; // Longitude de Syracuse, Utah
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
