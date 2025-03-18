@@ -11,8 +11,8 @@ body {
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
-    color: #013a63;
-    background: white;
+    color: #fff;
+    background: #013a63;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -178,13 +178,7 @@ body {
     }
     
 
-    /* Weather Section */
-    #weather-container {
-        text-align: center;
-        padding: 20px;
-        background: white;
-        border-radius: 10px;
-    }
+   
 
     /* Events Section */
     .events {
@@ -193,11 +187,12 @@ body {
     }
 
     .event {
-        background: white;
+        background: #f8f8f8;
         padding: 15px;
         margin: 10px 0;
         border-radius: 10px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
     }
 
     .event h3 {
@@ -211,8 +206,8 @@ body {
     }
 
     .event a {
-        text-decoration: none;
-        color: #013a63;
+        text-decoration: underline;
+        color: #035793;
         font-weight: bold;
     }
 
@@ -224,6 +219,11 @@ body {
     .business-spotlight {
         text-align: center;
         padding: 20px;
+        margin: 20px auto;
+        background: #f8f8f8;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     .spotlight img {

@@ -24,8 +24,8 @@
             </ul>
         </nav>
         <h1>Latter-day Prophets</h1>
-      </header>
-      <main>
+    </header>
+    <main>
         <div class="filters">
             <button id="all">All Prophets</button>
             <button id="utah">Born in Utah</button>
@@ -33,10 +33,11 @@
             <button id="president15">Served 15+ Years</button>
         </div>
         <div id="cards"></div>
-      </main>
-      <footer>
-        Eliezio | Latter-day Prophets
-      </footer>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Eliezio | Utah, USA</p>
+        <p id="lastModified">Last Modified: </p>      
+    </footer>
     <script>
        const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
         const cards = document.querySelector('#cards');
