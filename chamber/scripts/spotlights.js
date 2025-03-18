@@ -46,50 +46,55 @@ function getRandomBusinesses(businesses, count) {
 
 //  spotlight
 function displaySpotlights(businesses) {
-  if (!spotlightContainer) {
-    console.error("Erro: seção .business-spotlight não encontrada.");
-    return;
+  if (!businesses || businesses.length === 0) {
+      console.warn("No businesses found for spotlight.");
+      return;
   }
 
-  spotlightContainer.innerHTML = '<h2>Business Spotlights</h2>';
+  if (!spotlightContainer) {
+      console.error("Error: .business-spotlight section was not found.");
+      return;
+  }
+
+  spotlightContainer.innerHTML = '<h2>Business Spotlights</h2>'; 
 
   businesses.forEach((business) => {
-    const spotlight = document.createElement('div');
-    spotlight.classList.add('spotlight');
+      const spotlight = document.createElement('div');
+      spotlight.classList.add('spotlight');
 
-    const img = document.createElement('img');
-    img.src = `images/${business.image}`;
-    img.alt = `${business.name} logo`;
-    img.loading = 'lazy';
+      const img = document.createElement('img');
+      img.src = `images/${business.image}`;
+      img.alt = `${business.name} logo`;
+      img.loading = 'lazy';
 
-    const name = document.createElement('h3');
-    name.textContent = business.name;
+      const name = document.createElement('h3');
+      name.textContent = business.name;
 
-    const address = document.createElement('p');
-    address.textContent = `${business.address}`;
+      const address = document.createElement('p');
+      address.textContent = `${business.address}`;
 
-    const phone = document.createElement('p');
-    phone.textContent = `${business.phone}`;
+      const phone = document.createElement('p');
+      phone.textContent = `${business.phone}`;
 
-    const membership = document.createElement('p');
-    membership.textContent = `Membership Level: ${business.membership_level === 3 ? "Gold" : "Silver"}`;
+      const membership = document.createElement('p');
+      membership.textContent = `Membership Level: ${business.membership_level === 3 ? "Gold" : "Silver"}`;
 
-    const website = document.createElement('a');
-    website.href = business.website;
-    website.target = '_blank';
-    website.textContent = website;
+      const website = document.createElement('a');
+      website.href = business.website;
+      website.target = '_blank';
+      website.textContent = website;
 
-    // add element
-    spotlight.appendChild(img);
-    spotlight.appendChild(name);
-    spotlight.appendChild(address);
-    spotlight.appendChild(phone);
-    spotlight.appendChild(membership);
-    spotlight.appendChild(website);
+      spotlight.appendChild(img);
+      spotlight.appendChild(name);
+      spotlight.appendChild(address);
+      spotlight.appendChild(phone);
+      spotlight.appendChild(membership);
+      spotlight.appendChild(website);
 
-    spotlightContainer.appendChild(spotlight);
+      spotlightContainer.appendChild(spotlight);
   });
 }
+
 
 getBusinesses();
 displaySpotlights();

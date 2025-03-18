@@ -76,6 +76,17 @@ body {
     color: #333;
     margin: 0;
 }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #013a63;
+  color: white;
+  border-radius: 8px;
+}
+
+
 @media (max-width: 600px) {
     .weather-content {
         grid-template-columns: 1fr; /* Stack elements vertically */
@@ -113,7 +124,17 @@ body {
 .slb a {
   color: #0000ee;
 }
-
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition:
+    transform 0.3s ease-in-out,
+    background 0.3s ease-in-out;
+}
 /* Tela maior que 764px */
 @media (min-width: 764px) {
   body {
@@ -207,18 +228,7 @@ body {
     color: #000;
   }
 
-  .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #013a63;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition:
-      transform 0.3s ease-in-out,
-      background 0.3s ease-in-out;
-  }
-
+  
   .cta-button:hover {
     background: #000;
     transform: scale(1.2);
@@ -241,7 +251,7 @@ body {
 
   .event h3 {
     font-size: 1.5rem;
-    color: #013a63;
+    color: #000;
   }
 
   .event p {
@@ -371,14 +381,7 @@ body {
     width: 100%;
   }
 
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 15px;
-    background: #013a63;
-    color: white;
-    border-radius: 8px;
-  }
+  
 }
 
 /* small sizes */
@@ -437,12 +440,12 @@ body {
 
   /* Ícone de hambúrguer e 'X' */
   #menuBtn::before {
-    content: '☰ Menu';
+    content: '☰';
     font-size: 24px;
   }
 
   #menuBtn.open::before {
-    content: '✖ Close';
+    content: '✖';
     font-size: 24px;
     background-color: #013a63;
   }
