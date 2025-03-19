@@ -2,21 +2,51 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f8f8;
 }
+/* side by side */.membership-container {
+  display: flex;
+  flex-direction: column; /* Default para telas pequenas */
+  gap: 20px;
+  align-items: stretch;
+}
+
+#membership-benefits,
+#membership-form {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste para telas maiores */
+@media (min-width: 768px) {
+  .membership-container {
+    flex-direction: row; /* Deixa lado a lado */
+    justify-content: space-between;
+  }
+
+  #membership-benefits {
+    width: 45%;
+  }
+
+  #membership-form {
+    width: 50%;
+  }
+}
+
+
 /* form */
 #membership-benefits {
+    display: grid;
     text-align: center;
     background: #f8f8f8;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    border: 1px solid #000;
 }
 
-#membership-benefits h2 {
-    font-size: 2rem;
-    color: #013a63;
-    margin-bottom: 15px;
-}
+
 
 .membership-levels {
     display: flex;
@@ -70,13 +100,6 @@ body {
     
 }
 
-#membership-form h2 {
-    font-size: 2rem;
-    text-align: center;
-    color: #013a63;
-    margin-bottom: 15px;
-}
-
 #membership-form form {
     display: flex;
     flex-direction: column;
@@ -106,7 +129,7 @@ body {
 }
 
 #membership-form button {
-    background: #013a63;
+    background: #000;
     color: white;
     font-size: 1rem;
     font-weight: bold;
@@ -119,8 +142,69 @@ body {
 }
 
 #membership-form button:hover {
-    background: #005fa3;
+    background: #013a63;
 }
+/* Modal: Hidden by default */
+.modal {
+    display: none; /* Ocultar por padrão */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Mostrar modal apenas quando a classe 'show' for adicionada */
+.modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+/* Modal content */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    animation: fadeInModal 0.3s ease-in-out;
+}
+
+/* Animação de entrada */
+@keyframes fadeInModal {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #013a63;
+    transition: color 0.3s ease-in-out;
+}
+
+.close:hover {
+    color: red;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -135,6 +219,23 @@ body {
 
     #membership-form {
         width: 90%;
+    }
+}
+
+.membership-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -214,7 +315,7 @@ footer {
         padding: 8px 12px;
         text-decoration: none;
     }
-    h1,h4 {
+    h1, h2, h4 {
         text-align: center;
         font-size: 3rem; 
         padding: 10px;
@@ -376,5 +477,9 @@ footer {
         width: 100%;
         font-size: 1.5rem;
     }
+    footer {
+        font-size: 0.9rem;
+    }
+    
 
 }

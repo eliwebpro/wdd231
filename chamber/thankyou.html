@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for joining the Syracuse Chamber of Commerce">
+    <meta name="author" content="Eliezio Marques da Silva">
+    
+    <title>Thank You - Syracuse Chamber</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    
+    <script src="scripts/thankyou.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/chamber.webp" alt="Chamber of Commerce">
+        <h1>Thank You for Joining!</h1>
+    </header>
+
+    <main>
+        <section id="confirmation">
+            <h2>Membership Confirmation</h2>
+            <p>Thank you, <span id="user-name"></span>, for submitting your application to join the Syracuse Chamber of Commerce!</p>
+            <p>Here is the information you submitted:</p>
+            
+            <div class="info-container">
+                <p><strong>First Name:</strong> <span id="first-name"></span></p>
+                <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Phone:</strong> <span id="phone"></span></p>
+                <p><strong>Business Name:</strong> <span id="business-name"></span></p>
+                <p><strong>Application Date:</strong> <span id="timestamp"></span></p>
+            </div>
+
+            <a href="index.html" class="btn">Return to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Syracuse Chamber | Designed by Eliezio Marques</p>
+    </footer>
+
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
