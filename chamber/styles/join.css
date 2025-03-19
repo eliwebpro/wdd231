@@ -177,6 +177,16 @@ body {
     position: relative;
     animation: fadeInModal 0.3s ease-in-out;
 }
+.modal-content ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.modal-content ul li {
+    padding-left: 0; 
+}
+
 
 /* Animação de entrada */
 @keyframes fadeInModal {
