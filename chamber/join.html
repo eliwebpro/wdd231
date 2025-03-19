@@ -28,8 +28,9 @@
     <link rel="stylesheet" href="styles/join.css">
 
     <script src="scripts/hamburger.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
     <script src="scripts/footer.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +47,7 @@
     </header>
 
     <nav>
-      <button id="menuBtn"></button>
+      <button id="menuBtn" aria-label="Open navigation menu"></button>
       <ul id="navMenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
@@ -57,75 +58,177 @@
 
     <main>
       <h1>Join the Syracuse Chamber</h1>
+    
+      <div class="membership-container">
 
-      <!-- Membership Benefits Section -->
-      <section id="membership-benefits">
-        <h4>Why Join the Chamber?</h4>
-        <p>Joining the Syracuse Chamber of Commerce opens doors to exclusive business resources, networking opportunities, advertising options, and community involvement.</p>
-
-        <div class="membership-levels">
-          <div class="membership-card">
-            <h3>Non-Profit</h3>
-            <p>✔ Basic directory listing</p>
-            <p>✔ Access to publications & trainings</p>
-            <p>✔ Community engagement</p>
-            <p class="price">$0/month</p>
+        <!-- Membership Form -->
+        <section id="membership-form">
+          <h2>Membership Application</h2>
+          <form action="thankyou.html" method="get">
+            <label for="name">First Name:
+              <input type="text" id="name" name="name" autocomplete="given-name" required>
+            </label>
+    
+            <label for="lname">Last Name:
+              <input type="text" id="lname" name="lname" autocomplete="family-name" required>
+            </label>
+    
+            <label for="organization-title">Business Title:
+              <input type="text" id="organization-title" name="organization-title" 
+                    title="Only letters, hyphens, and spaces (7 total)"
+                    autocomplete="organization-title"
+                    pattern="[A-Za-z\s-]{7,}"
+                    required>
+            </label>
+    
+            <label for="email">Email:
+              <input type="email" id="email" name="email"
+                    title="Enter a valid email address"
+                    autocomplete="email"
+                    placeholder="example@email.com"
+                    required>
+            </label>
+    
+            <label for="phone">Mobile Phone:
+              <input type="tel" id="phone" name="phone"
+                    title="Enter your mobile phone number"
+                    autocomplete="tel"
+                    placeholder="555-555-5555"
+                    required>
+            </label>
+    
+            <label for="business">Business Name:
+              <input type="text" id="business" name="business"
+                    title="Enter the name of your business or organization"
+                    autocomplete="organization"
+                    required>
+            </label>
+    
+            <label for="membership">Select Membership Level:
+              <select id="membership" name="membership">
+                <option value="non-profit">Non-Profit (Free)</option>
+                <option value="bronze">Bronze ($15/month)</option>
+                <option value="silver">Silver ($25/month)</option>
+                <option value="gold">Gold ($50/month)</option>
+              </select>
+            </label>
+    
+            <label for="business-description">Business Description:
+              <textarea id="business-description" name="business-description"
+                        title="Provide a brief description of your business or organization"
+                        rows="4"
+                        required></textarea>
+            </label>
+    
+            <button type="submit">Apply Now</button>
+          </form>
+        </section>
+        <!-- Membership Benefits Section -->
+        <section id="membership-benefits">
+          <h2>Why Join the Chamber?</h2>
+          <p>Joining the Syracuse Chamber of Commerce opens doors to exclusive business resources, networking opportunities, advertising options, and community involvement.</p>
+    
+          <div class="membership-levels">
+            <!-- Non-Profit Membership -->
+            <div class="membership-card">
+              <h3>Non-Profit</h3>
+              <p class="price">$0/month</p>
+              <a href="#" onclick="event.preventDefault(); openModal('modal-nonprofit')">See Details</a>
+            </div>
+    
+            <div id="modal-nonprofit" class="modal">
+              <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal-nonprofit')">&times;</span>
+                  <h3>Non-Profit Membership Benefits</h3>
+                  <ul>
+                      <li>✔ Basic directory listing</li>
+                      <li>✔ Community engagement</li>
+                      <li>✔ Networking events</li>
+                  </ul>
+              </div>
+            </div>
+    
+            <!-- Bronze Membership -->
+            <div class="membership-card">
+              <h3>Bronze</h3>
+              <p class="price">$15/month</p>
+              <a href="#" onclick="event.preventDefault(); openModal('modal-bronze')">See Details</a>
+            </div>
+    
+            <div id="modal-bronze" class="modal">
+              <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal-bronze')">&times;</span>
+                  <h3>Bronze Membership Benefits</h3>
+                  <ul>
+                      <li>✔ Basic directory listing</li>
+                      <li>✔ Training access</li>
+                      <li>✔ Business networking</li>
+                  </ul>
+              </div>
+            </div>
+    
+            <!-- Silver Membership -->
+            <div class="membership-card">
+              <h3>Silver</h3>
+              <p class="price">$25/month</p>
+              <a href="#" onclick="event.preventDefault(); openModal('modal-silver')">See Details</a>
+            </div>
+    
+            <div id="modal-silver" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-silver')">&times;</span>
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                  <li>✔ Directory listing & featured spotlights</li>
+                  <li>✔ Social media promotions</li>
+                  <li>✔ Monthly networking luncheons</li>
+                </ul>
+              </div>
+            </div>
+    
+            <!-- Gold Membership -->
+            <div class="membership-card">
+              <h3>Gold</h3>
+              <p class="price">$50/month</p>
+              <a href="#" onclick="event.preventDefault(); openModal('modal-gold')">See Details</a>
+            </div>
+    
+            <div id="modal-gold" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-gold')">&times;</span>
+                <h3>Gold Membership Benefits</h3>
+                <ul>
+                  <li>✔ All Silver benefits</li>
+                  <li>✔ Business sponsorship opportunities</li>
+                  <li>✔ Exclusive advertising options</li>
+                </ul>
+              </div>
+            </div>
           </div>
+        </section>
 
-          <div class="membership-card">
-            <h3>Silver</h3>
-            <p>✔ Directory listing & featured spotlights</p>
-            <p>✔ Social media promotions</p>
-            <p>✔ Monthly networking luncheons</p>
-            <p class="price">$25/month</p>
-          </div>
+        <!-- time stamp -->
+        <input type="hidden" id="timestamp" name="timestamp">
 
-          <div class="membership-card">
-            <h3>Gold</h3>
-            <p>✔ All Silver benefits</p>
-            <p>✔ Business sponsorship opportunities</p>
-            <p>✔ Exclusive advertising options</p>
-            <p class="price">$50/month</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Membership Form -->
-      <section id="membership-form">
-        <h4>Membership Application</h4>
-        <form action="#" method="post">
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" required>
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" required>
-
-          <label for="business">Business Name:</label>
-          <input type="text" id="business" name="business">
-
-          <label for="membership">Select Membership Level:</label>
-          <select id="membership" name="membership">
-            <option value="non-profit">Non-Profit (Free)</option>
-            <option value="silver">Silver ($25/month)</option>
-            <option value="gold">Gold ($50/month)</option>
-          </select>
-
-          <label for="comments">Additional Comments:</label>
-          <textarea id="comments" name="comments" rows="4"></textarea>
-
-          <button type="submit">Apply Now</button>
-        </form>
-      </section>
-
-      
+    
+        
+      </div>
     </main>
+    
 
     <footer>
       <p>&copy; <span id="currentyear"></span> Eliezio - Utah, USA</p>
       <p id="lastModified">Last Modified: </p>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("timestamp").value = new Date().toISOString();
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+      });
+    </script>
+    
+    
+
   </body>
 </html>
