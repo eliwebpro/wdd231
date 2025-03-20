@@ -1,5 +1,5 @@
 // OpenWeatherMap API Configuration
-const apiKey = "d07981466ee03629ca93efe9891f3378"; // Your API Key
+const apiKey = "d07981466ee03629ca93efe9891f3378"; 
 const lat = "41.0896"; // Syracuse, Utah Latitude
 const lon = "-112.0647"; // Syracuse, Utah Longitude
 const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
@@ -14,7 +14,7 @@ async function getWeather() {
         const data = await response.json();
 
         // Extracting current weather information
-        const temperature = Math.round(data.main.temp); // Now displayed without decimals
+        const temperature = Math.round(data.main.temp); // rounded
         const weatherDescription = data.weather[0].description;
         const weatherIcon = data.weather[0].icon;
 
@@ -39,7 +39,7 @@ async function getForecast() {
         const forecastContainer = document.getElementById("weather-forecast");
 
 
-        // Creating a map to store 3 distinct upcoming days
+        // variable Map to store 3 upcoming days
         const forecastDays = new Map();
         
         for (let i = 0; i < data.list.length; i++) {

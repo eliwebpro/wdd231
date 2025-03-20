@@ -353,7 +353,7 @@ footer {
   h1,
   h4 {
     text-align: center;
-    font-size: 3rem; /* Mesmo tamanho da fonte */
+    font-size: 3rem; 
     padding: 10px;
     background: #013a63;
     color: white;
@@ -419,7 +419,29 @@ footer {
   }
 
   /* Navigation */
-  /* Estilização para o menu */
+/* Estilização do botão */
+#menuBtn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+/* hamburguer and 'X' */
+#menuBtn::before {
+  content: '☰';
+  font-size: 24px;
+}
+
+#menuBtn.open::before {
+  content: '✖';
+  font-size: 24px;
+  background-color: #013a63;
+}
+
   nav {
     background: #333;
     border-radius: 8px;
@@ -427,30 +449,9 @@ footer {
     padding: 10px;
   }
 
-  /* Estilização do botão */
-  #menuBtn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-    display: block;
-    position: relative;
-  }
+  
 
-  /* Ícone de hambúrguer e 'X' */
-  #menuBtn::before {
-    content: '☰';
-    font-size: 24px;
-  }
-
-  #menuBtn.open::before {
-    content: '✖';
-    font-size: 24px;
-    background-color: #013a63;
-  }
-
-  /* Menu fechado */
+  /* Menu closed */
   nav ul {
     display: none;
     list-style: none;
@@ -464,14 +465,14 @@ footer {
     width: 100%;
   }
 
-  /* Quando o menu estiver aberto, exiba-o em bloco e empurre o restante para baixo */
+  /* opened */
   nav ul.show {
     display: block;
     position: static;
     width: 100%;
     padding: 10px 0;
   }
-  /* Estilização dos itens do menu */
+  /* menu */
   nav ul li {
     padding: 10px;
     text-align: center;
@@ -485,7 +486,7 @@ footer {
     padding: 5px;
   }
 
-  /* Estilização do link ativo */
+  /* link ativo */
   nav ul li a.active {
     background-color: #013a63;
     color: white;
