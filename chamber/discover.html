@@ -1,132 +1,175 @@
 <!-- Corrigido -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Syracuse, Utah History, Demographics, and Events">
-    <meta name="author" content="Eliezio Marques da Silva">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover Syracuse, Utah History, Demographics, and Events" />
+    <meta name="author" content="Eliezio Marques da Silva" />
 
     <!-- meta card -->
-    <meta property="fb:app_id" content="620597497453520">
-    <meta property="og:title" content="Syracuse Chamber of Commerce - Home Page">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://eliwebpro.github.io/wdd231/chamber/images/chamber.webp">
-    <meta property="og:url" content="https://eliwebpro.github.io/wdd231/chamber/index.html">
-    <meta property="og:description" content="Learn about the history, demographics, and upcoming events in Syracuse, Utah.">
+    <meta property="fb:app_id" content="620597497453520" />
+    <meta
+      property="og:title"
+      content="Syracuse Chamber of Commerce - Home Page" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://eliwebpro.github.io/wdd231/chamber/images/chamber.webp" />
+    <meta
+      property="og:url"
+      content="https://eliwebpro.github.io/wdd231/chamber/index.html" />
+    <meta
+      property="og:description"
+      content="Learn about the history, demographics, and upcoming events in Syracuse, Utah." />
 
     <!-- Twitter Cards -->
-    <meta name="twitter:card" content="Discover Syracuse, Utah">
-    <meta name="twitter:site" content="@seuTwitter">
-    <meta name="twitter:title" content="Discover Syracuse, Utah">
-    <meta name="twitter:description" content="Syracuse Chamber of Commerce - Home Page">
-    <meta name="twitter:image" content="https://eliwebpro.github.io/wdd231/chamber/images/chamber.webp">
-    <meta name="twitter:url" content="https://eliwebpro.github.io/wdd231/chamber/index.html">
+    <meta name="twitter:card" content="Discover Syracuse, Utah" />
+    <meta name="twitter:site" content="@seuTwitter" />
+    <meta name="twitter:title" content="Discover Syracuse, Utah" />
+    <meta
+      name="twitter:description"
+      content="Syracuse Chamber of Commerce - Home Page" />
+    <meta
+      name="twitter:image"
+      content="https://eliwebpro.github.io/wdd231/chamber/images/chamber.webp" />
+    <meta
+      name="twitter:url"
+      content="https://eliwebpro.github.io/wdd231/chamber/index.html" />
 
     <title>Discover Syracuse, Utah</title>
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/discover.css" />
 
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/weather.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet" />
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="favicon.ico">
-</head> 
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="favicon.ico" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <img src="images/chamber.webp" alt="Chamber of Commerce">
-        <span>Syracuse Chamber - Discover</span>
+      <img src="images/chamber.webp" alt="Chamber of Commerce" />
+      <span>Syracuse Chamber - Discover</span>
     </header>
 
     <nav>
-        <button id="menuBtn"></button>
-        <ul id="navMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html" class="active">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-        </ul>
+      <button id="menuBtn"></button>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
     </nav>
 
     <main>
-        <h1>Discover Syracuse</h1>
+      <h1>Discover Syracuse</h1>
 
-        <!-- História Local -->
-        <section id="history">
-            <h2>History of Syracuse</h2>
-            <p>Syracuse, Utah, was founded in the late 1800s as a small farming community. Over the years, it has grown into a thriving city with a strong local economy and a rich cultural heritage.</p>
-            <img src="images/historic_syracuse.webp" alt="Historic Syracuse">
+      <!-- História Local -->
+      <section id="history">
+        <h2>History of Syracuse</h2>
+        <p>
+          Syracuse, Utah, was founded in the late 1800s as a small farming
+          community. Over the years, it has grown into a thriving city with a
+          strong local economy and a rich cultural heritage.
+        </p>
+        <img src="images/historic_syracuse.webp" alt="Historic Syracuse" />
+      </section>
+
+      <!-- Grid Container -->
+      <div class="info-grid">
+        <!-- Demographics -->
+        <section id="demographics">
+          <h2>Current Demographics</h2>
+          <ul>
+            <li><strong>Population:</strong> ~35,500 residents</li>
+            <li><strong>Household Income:</strong> $137,000</li>
+            <li><strong>Median resident age:</strong> 29.2</li>
+            <li><strong>Median House Value:</strong> ~$608,000</li>
+          </ul>
+          <a
+            href="https://www.city-data.com/city/Syracuse-Utah.html"
+            target="_blank"
+            >Source</a
+          >
         </section>
 
-        <!-- Grid Container -->
-        <div class="info-grid">
-            <!-- Demographics -->
-            <section id="demographics">
-                <h2>Current Demographics</h2>
-                <ul>
-                    <li><strong>Population:</strong> ~35,500 residents</li>
-                    <li><strong>Household Income:</strong> $137,000</li>
-                    <li><strong>Median resident age:</strong> 29.2</li>
-                    <li><strong>Median House Value:</strong> ~$608,000</li>
-                </ul>
-                <a href="https://www.city-data.com/city/Syracuse-Utah.html" target="_blank">Source</a> 
-            </section>
+        <!-- Events -->
+        <section id="events">
+          <h2>Upcoming Events</h2>
+          <ul>
+            <li>
+              <strong>Water Lantern Festival</strong> - August 1st at Jensen
+              Nature Park
+            </li>
+            <li><strong>Syracuse City Easter Egg Hunt</strong> - April 19th</li>
+            <li><strong>Fall Iceberg Market</strong> - September 13th</li>
+          </ul>
+          <a href="https://www.syracuseut.gov/calendar.aspx" target="_blank"
+            >See More</a
+          >
+        </section>
+      </div>
 
-            <!-- Events -->
-            <section id="events">
-                <h2>Upcoming Events</h2>
-                <ul>
-                    <li><strong>Water Lantern Festival</strong> - August 1st at Jensen Nature Park</li>
-                    <li><strong>Syracuse City Easter Egg Hunt</strong> - April 19th</li>
-                    <li><strong>Fall Iceberg Market</strong> - September 13th</li>
-                </ul>
-                <a href="https://www.syracuseut.gov/calendar.aspx" target="_blank">See More</a> 
-            </section>
+      <!--  Imagens -->
+      <section id="gallery">
+        <h2>Explore Syracuse</h2>
+        <div class="image-montage">
+          <img src="images/antelope-island.webp" alt="Antelope Island" />
+          <a href="https://maps.app.goo.gl/DzQbYJaXK4HfdTgi7" target="_blank"
+            >Antelope Island</a
+          >
+
+          <img src="images/antelope-bmx.webp" alt="Syracuse Sunset" />
+          <a href="https://maps.app.goo.gl/inn94VYWpTCZJ2wG8" target="_blank"
+            >Antelope BMX</a
+          >
+
+          <img src="images/jasen-park.webp" alt="Jensen Nature Park" />
+          <a href="https://maps.app.goo.gl/mwBAiarC6DfQne2t8" target="_blank"
+            >Jensen Nature Park</a
+          >
         </div>
+      </section>
 
-        <!--  Imagens -->
-        <section id="gallery">
-            <h2>Explore Syracuse</h2>
-            <div class="image-montage">
-                <img src="images/antelope-island.webp" alt="Antelope Island">
-                <a href="https://maps.app.goo.gl/DzQbYJaXK4HfdTgi7" target="_blank">Antelope Island</a>
+      <!-- Mapa -->
+      <section id="map">
+        <h2>Syracuse</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56263.570127934225!2d-112.11710168179226!3d41.08195613227335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752fd0925f39bdd%3A0x66de35e949280ee1!2sSyracuse%2C%20UT!5e1!3m2!1sen!2sus!4v1743480348996!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
 
-                <img src="images/antelope-bmx.webp" alt="Syracuse Sunset">
-                <a href="https://maps.app.goo.gl/inn94VYWpTCZJ2wG8" target="_blank">Antelope BMX</a>
-
-                <img src="images/jasen-park.webp" alt="Jensen Nature Park">
-                <a href="https://maps.app.goo.gl/mwBAiarC6DfQne2t8" target="_blank">Jensen Nature Park</a>
-            </div>
-        </section>
-
-        <!-- Mapa -->
-        <section id="map">
-            <h2>Syracuse</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
-        <!-- Weather Section -->
-        <section id="weather-container">
-            <h2>Weather</h2>
-            <div class="weather-content">
-                <div id="current-weather"></div> 
-                <div id="weather-forecast"></div> 
-            </div>
-        </section> 
+      <!-- Weather Section -->
+      <section id="weather-container">
+        <h2>Weather</h2>
+        <div class="weather-content">
+          <div id="current-weather"></div>
+          <div id="weather-forecast"></div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> Eliezio - Utah, USA</p>
-        <p id="lastModified">Last Modified: </p>
+      <p>&copy; <span id="currentyear"></span> Eliezio - Utah, USA</p>
+      <p id="lastModified">Last Modified:</p>
     </footer>
-</body>
+  </body>
 </html>
