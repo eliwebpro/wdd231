@@ -14,21 +14,21 @@ async function getBusinesses() {
       business.membership_level === 3 || business.membership_level === 2
     );
 
-    console.log("Membros qualificados:", eligibleBusinesses);
+    console.log("Members:", eligibleBusinesses);
 
     if (eligibleBusinesses.length === 0) {
-      console.warn("Nenhum membro Gold ou Silver disponível para spotlight!");
+      console.warn("no gold or silver founded!");
       return;
     }
 
 // random
     const spotlightBusinesses = getRandomBusinesses(eligibleBusinesses, Math.floor(Math.random() * 1) + 2);
     
-    console.log("Membros selecionados para spotlight:", spotlightBusinesses); 
+    console.log("Members from spotlight:", spotlightBusinesses); 
 
     displaySpotlights(spotlightBusinesses);
   } catch (error) {
-    console.error('Erro ao carregar os dados:', error);
+    console.error('Error to fecthing data:', error);
   }
 }
 
