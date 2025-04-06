@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family:  sans-serif;
     background-color: #fff;
   }
   * {
@@ -181,6 +181,13 @@ main {
     background: white;
     border-radius: 10px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
 h1, h4 {
