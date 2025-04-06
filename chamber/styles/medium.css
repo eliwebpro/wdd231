@@ -1,0 +1,86 @@
+@media (min-width: 641px) and (max-width: 1024px) {
+    body{
+        background-color: #f8f8f8;
+        font-family: Arial, sans-serif;
+        margin: 0 auto;
+    }
+    .discover-grid {
+      grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+    }
+  
+    .discover-card img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+      filter: brightness(1.1);
+    }
+    .discover-card {
+        grid-template-columns: 300px 1fr;
+        grid-template-areas:
+          "photo name"
+          "photo description"
+          "photo location";
+        align-items: center;
+      }
+    
+      .discover-card img.photo {
+        width: 300px;
+        height: 200px;
+      }
+    }
+  
+    nav {
+      background-color: #36454f;
+      border-radius: 8px;
+      padding: 10px;
+    }
+  
+    nav button {
+      display: none;
+    }
+  
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+    }
+  
+    nav ul li a {
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    nav ul li a:hover {
+      text-decoration: underline;
+      transform: scale(1.2);
+    }
+  
+    nav ul li a.active {
+      background-color: #005fa3;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 8px 12px;
+      text-decoration: none;
+    }
+  
+  @media (min-width: 641px) and (max-width: 1024px) {
+    /* Esconde o botão do menu */
+    #menuBtn {
+      display: none;
+    }
+  
+    nav ul {
+      display: flex !important;
+      justify-content: space-around;
+      list-style: none;
+    }
+  }
+  
+  

@@ -40,26 +40,34 @@
       content="https://eliwebpro.github.io/wdd231/chamber/index.html" />
 
     <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; script-src 'self' https://openweathermap.org; style-src 'self' 'unsafe-inline' https:;">
+  
+    
+    <meta name="theme-color" content="#ecc96a">
+    <meta name="copyright" content="Eliezio Marques da Silva">
 
+
+    
 
 
     <title>Discover Syracuse, Utah</title>
 
-    <link rel="canonical" href="https://eliwebpro.github.io/wdd231/chamber/discover.html">
-
     <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/discover.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 1025px)">
+    
 
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/footer.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" as="style">
+
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="favicon.ico" />
@@ -67,13 +75,11 @@
 
   <body>
     <header>
-      <img src="images/chamber.webp" alt="Chamber of Commerce" />
-      <span>Syracuse Chamber - Discover</span>
+      <h1>Syracuse Chamber of Commerce</h1>
     </header>
-
     <nav>
-      <button id="menuBtn"></button>
-      <ul id="navMenu">
+        <button id="menuBtn" aria-label="Open navigation menu"></button>
+        <ul id="navMenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="discover.html" class="active">Discover</a></li>
         <li><a href="directory.html">Directory</a></li>
@@ -82,109 +88,12 @@
     </nav>
 
     <main>
-      <h1>Discover Syracuse</h1>
+      <h2 class="section-title">Discover Syracuse</h2>
 
-      <!-- História Local -->
-      <section id="history">
-        <h2>History of Syracuse</h2>
-        <p>
-          Syracuse, Utah, was founded in the late 1800s as a small farming
-          community. Over the years, it has grown into a thriving city with a
-          strong local economy and a rich cultural heritage.
-        </p>
-        <img
-          src="images/historic_syracuse.webp"
-          alt="Historic Syracuse"
-          loading="lazy" />
-      </section>
+      <aside id="visitor-message"></aside>
 
-      <!-- Grid Container -->
-      <div class="info-grid">
-        <!-- Demographics -->
-        <section id="demographics">
-          <h2>Current Demographics</h2>
-          <ul>
-            <li><strong>Population:</strong> ~35,500 residents</li>
-            <li><strong>Household Income:</strong> $137,000</li>
-            <li><strong>Median resident age:</strong> 29.2</li>
-            <li><strong>Median House Value:</strong> ~$608,000</li>
-          </ul>
-          <a
-            href="https://www.city-data.com/city/Syracuse-Utah.html"
-            target="_blank"
-            >Source</a
-          >
-        </section>
-
-        <!-- Events -->
-        <section id="events">
-          <h2>Upcoming Events</h2>
-          <ul>
-            <li>
-              <strong>Water Lantern Festival</strong> - August 1st at Jensen
-              Nature Park
-            </li>
-            <li><strong>Syracuse City Easter Egg Hunt</strong> - April 19th</li>
-            <li><strong>Fall Iceberg Market</strong> - September 13th</li>
-          </ul>
-          <a href="https://www.syracuseut.gov/calendar.aspx" target="_blank"
-            >See More</a
-          >
-        </section>
-      </div>
-
-      <!--  Imagens -->
-      <section id="gallery">
-        <h2>Explore Syracuse</h2>
-        <div class="image-montage">
-          <img
-            src="images/antelope-island.webp"
-            alt="Antelope Island"
-            loading="lazy" />
-          <img
-            src="images/antpk2.jpeg"
-            alt="Antelope Island 2"
-            loading="lazy" />
-          <a href="https://maps.app.goo.gl/DzQbYJaXK4HfdTgi7" target="_blank"
-            >Antelope Island</a
-          >
-
-          <img
-            src="images/antelope-bmx.webp"
-            alt="Syracuse Sunset BMX"
-            loading="lazy" />
-          <img src="images/bmx2.jpg" alt="Syracuse Sunset BMX" loading="lazy" />
-          <a href="https://maps.app.goo.gl/inn94VYWpTCZJ2wG8" target="_blank"
-            >Antelope BMX</a
-          >
-
-          <img
-            src="images/jasen-park.webp"
-            alt="Jensen Nature Park"
-            loading="lazy" />
-          <img src="images/jpk2.jpg" alt="Jensen Nature Park2" loading="lazy" />
-          <a href="https://maps.app.goo.gl/mwBAiarC6DfQne2t8" target="_blank"
-            >Jensen Nature Park</a
-          >
-        </div>
-      </section>
-
-      <!-- map -->
-      <section id="map">
-        <h2>Syracuse</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56263.570127934225!2d-112.11710168179226!3d41.08195613227335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752fd0925f39bdd%3A0x66de35e949280ee1!2sSyracuse%2C%20UT!5e1!3m2!1sen!2sus!4v1743480348996!5m2!1sen!2sus"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </section>
-
-      <!-- weather  -->
-      <section id="weather-container">
-        <h2>Weather</h2>
-        <div class="weather-content">
-          <div id="current-weather"></div>
-          <div id="weather-forecast"></div>
-        </div>
+      <section class="cards-grid">
+        <!-- JS file-->
       </section>
     </main>
 
