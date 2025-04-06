@@ -30,9 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
           const description = document.createElement("p");
           description.textContent = item.description;
   
-          
+          const button = document.createElement("a");
+          button.textContent = "Learn More";
+          button.href = item.url || "#"; 
+          button.target = "_blank"; 
+          button.rel = "noopener noreferrer";
+          button.className = "learn-more-btn";
   
-          card.append(title, figure, address, description);
+          card.append(title, figure, address, description, button);
           container.appendChild(card);
         });
   
@@ -42,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Error loading discover content:", error);
       });
   });
+  
   
 
 const aside = document.getElementById("visitor-message");

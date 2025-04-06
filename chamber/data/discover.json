@@ -1,51 +1,58 @@
 [
-    {
-      "title": "Antelope Island State Park",
-      "image": "images/antelope-island.webp",
-      "address": "4528 W 1700 S, Syracuse, UT 84075",
-      "description": "Home to free-roaming bison, Antelope Island offers scenic views and a variety of outdoor activities including hiking, biking, and wildlife viewing."
-    },
-    {
-      "title": "Jensen Nature Park",
-      "image": "images/jpk2.webp",
-      "address": "3176 S Bluff Rd, Syracuse, UT 84075",
-      "description": "A peaceful area with a pond, walking trails, and great spots for birdwatching and picnicking."
-    },
-    {
-      "title": "Syracuse BMX Park",
-      "image": "images/bmx2.webp",
-      "address": "1950 S 2000 W, Syracuse, UT 84075",
-      "description": "Popular local track for BMX riders of all ages. Hosts events and open practice sessions."
-    },
-    {
-      "title": "Syracuse Museum",
-      "image": "images/community.webp",
-      "address": "1891 W 1700 S, Syracuse, UT 84075",
-      "description": "Learn about Syracuse's early days, local pioneers, and view rotating historical exhibits."
-    },
-    {
-      "title": "Founders Park",
-      "image": "images/founpk.webp",
-      "address": "1904 W 1700 S, Syracuse, UT 84075",
-      "description": "A family-friendly park with pavilions, splash pads, sports fields, and walking paths."
-    },
-    {
-      "title": "Syracuse Arts Council",
-      "image": "images/syracuse_recreation.webp",
-      "address": "Syracuse Community Center, 1912 W 1900 S, Syracuse, UT 84075",
-      "description": "Dedicated to promoting visual and performing arts through local productions and workshops."
-    },
-    {
-      "title": "Iceberg Drive Inn",
-      "image": "images/iceb.webp",
-      "address": "300 W 1700 S, Syracuse, UT 84075",
-      "description": "A nostalgic diner known for its thick shakes and classic American fast food."
-    },
-    {
-      "title": "Jensen Pond Fishing",
-      "image": "images/fishing_jensen_nature_park.webp",
-      "address": "Jensen Nature Park, 3176 S Bluff Rd, Syracuse, UT 84075",
-      "description": "A serene fishing pond regularly stocked with fish, ideal for families and casual anglers."
-    }
-  ]
-  
+  {
+    "title": "Antelope Island State Park",
+    "image": "images/antelope-island.webp",
+    "address": "4528 W 1700 S, Syracuse, UT 84075",
+    "description": "Home to free-roaming bison, Antelope Island offers scenic views and a variety of outdoor activities including hiking, biking, and wildlife viewing.",
+    "url": "https://stateparks.utah.gov/parks/antelope-island/"
+  },
+  {
+    "title": "Jensen Nature Park",
+    "image": "images/jpk2.webp",
+    "address": "3176 S Bluff Rd, Syracuse, UT 84075",
+    "description": "A peaceful area with a pond, walking trails, and great spots for birdwatching and picnicking.",
+    "url": "https://www.syracuseut.gov/Facilities/Facility/Details/Jensen-Nature-Park-2"
+  },
+  {
+    "title": "Syracuse BMX Park",
+    "image": "images/bmx2.webp",
+    "address": "1950 S 2000 W, Syracuse, UT 84075",
+    "description": "Popular local track for BMX riders of all ages. Hosts events and open practice sessions.",
+    "url": "https://www.usabmx.com/tracks/1941"
+  },
+  {
+    "title": "Syracuse Museum",
+    "image": "images/community.webp",
+    "address": "1891 W 1700 S, Syracuse, UT 84075",
+    "description": "Learn about Syracuse's early days, local pioneers, and view rotating historical exhibits.",
+    "url": "https://www.syracuseut.gov/336/Syracuse-Museum"
+  },
+  {
+    "title": "Founders Park",
+    "image": "images/founpk.webp",
+    "address": "1904 W 1700 S, Syracuse, UT 84075",
+    "description": "A family-friendly park with pavilions, splash pads, sports fields, and walking paths.",
+    "url": "https://www.syracuseut.gov/Facilities/Facility/Details/Founders-Park-4"
+  },
+  {
+    "title": "Syracuse Arts Council",
+    "image": "images/syracuse_recreation.webp",
+    "address": "Syracuse Community Center, 1912 W 1900 S, Syracuse, UT 84075",
+    "description": "Dedicated to promoting visual and performing arts through local productions and workshops.",
+    "url": "https://www.syracuseutaharts.org/"
+  },
+  {
+    "title": "Iceberg Drive Inn",
+    "image": "images/iceb.webp",
+    "address": "300 W 1700 S, Syracuse, UT 84075",
+    "description": "A nostalgic diner known for its thick shakes and classic American fast food.",
+    "url": "https://icebergdriveinn.com/locations/"
+  },
+  {
+    "title": "Jensen Pond Fishing",
+    "image": "images/fishing_jensen_nature_park.webp",
+    "address": "Jensen Nature Park, 3176 S Bluff Rd, Syracuse, UT 84075",
+    "description": "A serene fishing pond regularly stocked with fish, ideal for families and casual anglers.",
+    "url": "https://www.syracuseut.gov/Facilities/Facility/Details/Jensen-Nature-Park-2"
+  }
+]
