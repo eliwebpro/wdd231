@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Sunlit Homes - Reach out for skylight consultations" />
+    <meta name="author" content="Eliezio Marques da Silva" />
+
+    <!-- meta card -->
+    <meta property="fb:app_id" content="620597497453520">
+    <meta property="og:title" content="Contact Sunlit Homes - Request Skylight Info or Consultation">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eliwebpro.github.io/wdd231/final-project/contact.html">
+    <meta property="og:image" content="https://eliwebpro.github.io/wdd231/final-project/images/file.webp">
+    <meta property="og:description" content="Have questions about skylight installation or maintenance? Contact Sunlit Homes and get expert advice.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Sunlit Homes">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@sunlithomes">
+    <meta name="twitter:title" content="Contact Sunlit Homes - Request Skylight Info or Consultation">
+    <meta name="twitter:description" content="Have questions about skylight installation or maintenance? Contact Sunlit Homes and get expert advice.">
+    <meta name="twitter:image" content="https://eliwebpro.github.io/wdd231/final-project/images/file.webp">
+
+
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="styles/contact.css" />
+
+    <script src="scripts/hamburguer.js" defer></script>
+    <script src="scripts/active.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/file.webp" alt="Sunlit Homes Logo" />
+      <span>Sunlit Homes</span>
+    </header>
+
+    <nav>
+      <button id="menu" aria-label="Toggle navigation menu"></button>
+      <ul class="navigation" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="models.html">Models</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h1>Contact Us</h1>
+        <form action="thankyou.html" method="get" class="form">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            placeholder="Write your name..."
+            required />
+          <label for="email"
+            >Email:
+            <input
+              type="email"
+              id="email"
+              name="email"
+              title="Enter a valid email address"
+              autocomplete="email"
+              placeholder="example@email.com"
+              required />
+          </label>
+          <label for="phone"
+            >Mobile Phone:
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              title="Enter your mobile phone number"
+              autocomplete="tel"
+              placeholder="555-555-5555"
+              required />
+          </label>
+          <label for="Location"
+            >Type of Location:
+            <select id="Location" name="Location">
+              <option value="Select">Select One</option>
+              <option value="House">House</option>
+              <option value="Condominium">Condominium</option>
+            </select>
+          </label>
+          <label for="installation-date"
+            >Date of Installation (If applicable)</label
+          >
+          <input type="date" id="installation-date" name="installation-date" />
+          <fieldset>
+            <legend>Aditional info: (Check all if apply)</legend>
+            <label
+              ><input type="checkbox" name="features" value="leaking" />
+              Leaking</label
+            >
+            <label
+              ><input type="checkbox" name="features" value="dirty" />
+              Dirty</label
+            >
+            <label
+              ><input type="checkbox" name="features" value="too-hot" /> Too
+              Hot</label
+            >
+            <label
+              ><input type="checkbox" name="features" value="too-dark" /> Too
+              Dark</label
+            >
+          </fieldset>
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Type here..."
+            required />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Write your message here..."
+            required></textarea>
+
+          <button id="sendbtn" type="submit">Send</button>
+          <input type="hidden" id="timestamp" name="times" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Eliezio - Utah, USA</p>
+      <p id="lastModified">Last Modified:</p>
+      <p><a href="attributions.html">Attributions</a></p>
+
+    </footer>
+  </body>
+</html>

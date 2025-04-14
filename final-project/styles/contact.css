@@ -1,0 +1,257 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Roboto, sans-serif;
+	background-color: #f8f8f8;
+}
+header {
+
+    display: flex;
+	align-items: center;
+	background-color: #ecc96a; 
+    color: #000; 
+    padding: 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	margin-bottom: 10px;
+}
+header span {
+	font-size: 2rem;
+	font-weight: bold;
+	justify-content: center;
+}
+.logo {
+	width: 100px;
+	height: auto;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 0 20px;
+
+}
+
+.navigation li {
+	list-style: none;
+	flex: 1;
+	text-align: center;
+}
+
+.navigation a {
+	display: block;
+	padding: 12px 0;
+	text-decoration: none;
+	background-color: #e3e3e3;
+	color: #000;
+	font-weight: 700;
+	font-size: 1.2rem;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+	border-radius: 10px;
+	
+}
+
+.navigation a:hover {
+	background-color: #f3f7aa;
+	border-radius: 15px;
+	transform: scale(1.05);
+	text-decoration: underline;
+}
+
+
+.navigation a.active {
+	background-color: #ecc96a;
+	padding: 10px;
+}
+main {
+	display: block;
+	gap: 16px;
+	padding: 16px;
+	background-color: #f8f8f8;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	color: #000 ;
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	
+}
+
+.show li {
+	display: block;
+	width: 100%;
+}
+
+  
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form label {
+  font-weight: bold;
+  color: #022850;
+  margin-bottom: 0.25rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #ecc96a;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(236, 201, 106, 0.4);
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #022850;
+}
+
+fieldset label {
+  display: block;
+  margin: 0.3rem 0;
+  font-weight: normal;
+}
+
+button#sendbtn {
+  background-color: #ecc96a;
+  color: #000;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#sendbtn:hover {
+  background-color: #f4c542;
+  transform: scale(1.03);
+}
+
+footer{
+	text-align: center;
+	background-color: #ecc96a	;
+	color: #000;
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+	padding: 20px;
+	border-radius: 10px;
+
+}
+
+
+/* small screen */
+@media only screen and (max-width: 760px) {
+
+	#menu {
+		display: block;
+		font-size: 2rem;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 0.5rem;
+		cursor: pointer;
+		text-align: right;
+		width: 100%;
+		transition: width 0.3s ease;
+		color: #000;
+		border: solid 1px black;
+	}
+
+	#menu::before {
+		content: "☰";
+		font-size: 2rem;
+		display: inline-block;
+	}
+
+	#menu.open::before {
+		content: "✖";
+		background-color: #f4c542;
+		padding: 0 10px;
+	}
+	/* Remover isso */
+	#menu.show::before {
+		content: "✖";	
+	}
+
+
+	/* Hide  menu  */
+	.navigation {
+		display: none;
+		flex-direction: column;
+		margin-top: 10px;
+	}
+
+	/* menu is open */
+	.navigation.show {
+		display: flex;
+		
+	}
+
+	.navigation li {
+		width: 100%;
+		text-align: center;
+		border: solid 1px black;
+
+	}
+
+	.navigation a {
+		display: block;
+		padding: 10px;
+		font-size: 1.2rem;
+		text-decoration: none;
+		color: #333;
+		font-weight: bold;
+	}
+
+	.navigation a:hover {
+		background-color: #f4c542;
+	}
+
+}	
+
+
+
+

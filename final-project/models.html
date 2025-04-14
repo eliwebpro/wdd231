@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Velux Skylight Models - Sunlit Homes" />
+  <meta name="author" content="Eliezio Marques da Silva" />
+
+  <!-- meta card -->
+  <meta property="fb:app_id" content="620597497453520">
+
+  <meta property="og:title" content="Explore Skylight Models - Sunlit Homes">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eliwebpro.github.io/wdd231/final-project/models.html">
+  <meta property="og:image" content="https://eliwebpro.github.io/wdd231/final-project/images/let-the-sun-in.webp">
+  <meta property="og:description" content="Compare top skylight models including size, materials, and features. Find the best option for your space.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Sunlit Homes">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@sunlithomes">
+  <meta name="twitter:title" content="Explore Skylight Models - Sunlit Homes">
+  <meta name="twitter:description" content="Compare top skylight models including size, materials, and features. Find the best option for your space.">
+  <meta name="twitter:image" content="https://eliwebpro.github.io/wdd231/final-project/images/let-the-sun-in.webp">
+
+
+  <title>Skylight Models</title>
+
+  <link rel="stylesheet" href="styles/models.css">
+
+  <script src="scripts/active.js" defer></script>
+  <script src="scripts/hamburguer.js" defer></script>
+  <script src="scripts/models.js" defer></script>
+  <script src="scripts/footer.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="favicon.ico" />
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/file.webp" alt="Logo" />
+    <span>Sunlit Homes</span>
+  </header>
+  
+  <nav>
+    <button id="menu" aria-label="Toggle navigation menu"></button>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="models.html" >Models</a></li>
+      <li><a href="contact.html" >Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <main>
+    <section id="content">
+      <h1>Skylight Models</h1>
+      <p class="intro">Explore our selection of popular VELUX skylight models:</p>
+      <div id="model-cards" class="card-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Eliezio - Utah, USA</p>
+    <p id="lastModified">Last Modified: </p>
+    <p><a href="attributions.html">Attributions</a></p>
+
+  </footer>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div id="modal-details"></div>
+    </div>
+  </div>
+  
+</body>
+</html>

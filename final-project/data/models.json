@@ -1,0 +1,96 @@
+{
+    "models":[
+        {
+        "model": "FS C06",
+        "type": "Fixed Skylight",
+        "size": "22 1/2\" x 46 1/2\"",
+        "features": ["Tempered glass", "Low-E3 coating", "Deck-mounted"]
+        },
+        {
+        "model": "VS C04",
+        "type": "Manual Venting Skylight",
+        "size": "21\" x 37 7/8\"",
+        "features": ["Tempered glass", "Low-E3", "Manual crank", "Deck-mounted"]
+        },
+        {
+        "model": "VSE C08",
+        "type": "Electric Venting Skylight",
+        "size": "21\" x 54 7/16\"",
+        "features": ["Electric operation", "Rain sensor", "Tempered glass", "Remote controlled"]
+        },
+        {
+        "model": "VSS C06",
+        "type": "Solar Powered Skylight",
+        "size": "22 1/2\" x 46 1/2\"",
+        "features": ["Solar-powered", "Rain sensor", "Remote controlled", "Energy efficient"]
+        },
+        {
+        "model": "TMR 014",
+        "type": "Sun Tunnel (Rigid)",
+        "size": "14\" diameter",
+        "features": ["Rigid tunnel", "High-reflectivity", "Great for small spaces"]
+        },
+        {
+        "model": "TGF 014",
+        "type": "Sun Tunnel (Flexible)",
+        "size": "14\" diameter",
+        "features": ["Flexible tunnel", "Easy installation", "Energy kit included"]
+        },
+        {
+        "model": "FS M04",
+        "type": "Fixed Skylight",
+        "size": "30 9/16\" x 30 9/16\"",
+        "features": ["Flat glass", "Deck-mounted", "No ventilation"]
+        },
+        {
+        "model": "QPF 2246",
+        "type": "Fixed Skylight",
+        "size": "22 1/2\" x 46 1/2\"",
+        "features": ["Curb-mounted", "Tempered glass", "Basic design"]
+        },
+        {
+        "model": "VS M06",
+        "type": "Manual Venting Skylight",
+        "size": "30 9/16\" x 46 1/2\"",
+        "features": ["Manual opening", "Deck-mounted", "Energy Star certified"]
+        },
+        {
+        "model": "VSE M08",
+        "type": "Electric Venting Skylight",
+        "size": "30 9/16\" x 54 7/16\"",
+        "features": ["Electric control", "Rain sensor", "Hardwired"]
+        },
+        {
+        "model": "VSS M08",
+        "type": "Solar Powered Skylight",
+        "size": "30 9/16\" x 54 7/16\"",
+        "features": ["No wiring required", "Solar power", "Quiet motor"]
+        },
+        {
+        "model": "TCR 014",
+        "type": "Commercial Sun Tunnel",
+        "size": "14\" diameter",
+        "features": ["For commercial buildings", "Rigid design", "Energy efficient"]
+        },
+        {
+        "model": "TCC 014",
+        "type": "Flat Roof Sun Tunnel",
+        "size": "14\" diameter",
+        "features": ["Flat roof compatible", "Durable materials", "Bright lighting"]
+        },
+        {
+        "model": "CM C06",
+        "type": "Curb Mounted Skylight",
+        "size": "22 1/2\" x 46 1/2\"",
+        "features": ["No-flash design", "Tempered glass", "For flat roofs"]
+        },
+        {
+        "model": "GPL M06",
+        "type": "Roof Window",
+        "size": "30 9/16\" x 46 1/2\"",
+        "features": ["Top-hinged", "Manual", "Great for attics"]
+        }
+    ]
+
+
+}

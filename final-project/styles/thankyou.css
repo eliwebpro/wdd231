@@ -1,0 +1,203 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Roboto, sans-serif;
+	background-color: #f8f8f8;
+}
+
+
+
+
+header {
+
+    display: flex;
+	align-items: center;
+	background-color: #ecc96a; 
+    color: #000; 
+    padding: 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	margin-bottom: 10px;
+}
+header span {
+	font-size: 2rem;
+	font-weight: bold;
+	justify-content: center;
+}
+.logo {
+	width: 100px;
+	height: auto;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 0 20px;
+
+}
+
+.navigation li {
+	list-style: none;
+	flex: 1;
+	text-align: center;
+}
+
+.navigation a {
+	display: block;
+	padding: 12px 0;
+	text-decoration: none;
+	background-color: #e3e3e3;
+	color: #000;
+	font-weight: 700;
+	font-size: 1.2rem;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+	border-radius: 10px;
+	
+}
+
+.navigation a:hover {
+	background-color: #f3f7aa;
+	border-radius: 15px;
+	transform: scale(1.05);
+	text-decoration: underline;
+}
+
+
+
+/* Main */
+main {
+padding: 40px 20px;
+max-width: 800px;
+margin: 0 auto;
+text-align: center;
+}
+
+h1 {
+font-size: 2.5rem;
+color: #000;
+margin-bottom: 1rem;
+}
+
+p {
+font-size: 1.1rem;
+margin-bottom: 10px;
+}
+
+.info-container {
+background-color: #fff;
+border-radius: 10px;
+padding: 25px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+margin-top: 1rem;
+text-align: left;
+}
+
+.info-container p {
+margin-bottom: 0.7rem;
+}
+
+/* Button */
+.btn {
+display: inline-block;
+margin-top: 20px;
+padding: 12px 24px;
+background-color: #ecc96a;
+color: #000;
+text-decoration: none;
+font-weight: bold;
+border-radius: 8px;
+transition: 0.3s ease;
+}
+
+.btn:hover {
+background-color: #f4c542;
+transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+text-align: center;
+background-color: #ecc96a;
+color: #000;
+padding: 20px;
+margin-top: 40px;
+font-weight: bold;
+border-radius: 10px 10px 0 0;
+}
+
+.show li {
+	display: block;
+	width: 100%;
+}
+@media only screen and (max-width: 760px) {
+
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0.5rem;
+	cursor: pointer;
+	text-align: right;
+	width: 100%;
+	transition: width 0.3s ease;
+	color: #000;
+	border: solid 1px black;
+}
+
+#menu::before {
+	content: "☰";
+	font-size: 2rem;
+	display: inline-block;
+}
+
+#menu.open::before {
+	content: "✖";
+	background-color: #f4c542;
+	padding: 0 10px;
+}
+/* Remover isso */
+#menu.show::before {
+	content: "✖";	
+}
+
+
+/* Hide  menu  */
+.navigation {
+	display: none;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+/* menu is open */
+.navigation.show {
+	display: flex;
+	
+}
+
+.navigation li {
+	width: 100%;
+	text-align: center;
+	border: solid 1px black;
+
+}
+
+.navigation a {
+	display: block;
+	padding: 10px;
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+.navigation a:hover {
+	background-color: #f4c542;
+}
+
+}	
